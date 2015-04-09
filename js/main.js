@@ -3,6 +3,9 @@
     $("#fullpage").fullpage({
       anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage"],
       slidesColor: ["#ebebeb", "#FFFAFA", "#ebebeb", "#FFFAFA","#ebebeb", "#FFFAFA"],
+      navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: false,
       slidesNavigation: true,
       scrollingSpeed: 800,
       keyboardScrolling: true,
