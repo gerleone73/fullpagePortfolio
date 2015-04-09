@@ -1,8 +1,8 @@
 (function() {
   $(function() {
     $("#fullpage").fullpage({
-      anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage"],
-      slidesColor: ["#FFFAFA", "#eef2f2 ", "#FFFAFA", "#eef2f2 ", "#FFFAFA"],
+      anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage"],
+      slidesColor: ["#ebebeb", "#FFFAFA", "#ebebeb", "#FFFAFA","#ebebeb", "#FFFAFA"],
       slidesNavigation: true,
       scrollingSpeed: 800,
       keyboardScrolling: true,
@@ -10,7 +10,7 @@
       continuousVertical: false,
       animateAnchor: true,
       afterLoad: function(anchorLink) {
-        if (anchorLink === "thirdPage") {
+        if (anchorLink === "forthPage") {
           $(".magic").addClass("animated bounceInLeft");
           $(".trophy").addClass("animated bounceInUp");
           return $(".users").addClass("animated bounceInRight");
