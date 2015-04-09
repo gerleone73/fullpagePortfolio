@@ -698,9 +698,10 @@ p{
 }
 .btn{
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  width:200px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 12px 24px;
+
   border-radius: 0;
   border: 0 !important;
   border-style: none !important;
