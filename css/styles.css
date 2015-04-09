@@ -669,9 +669,17 @@ body.no-scrollbar {
   overflow: hidden;
 }
 
-
-
-
+.space{
+  padding-right: 10px;
+  font-size: 1.2em;
+}
+.git{
+  padding-bottom: 10px;
+  opacity: 0.7;
+}
+.js{
+  padding-bottom: 15px;
+}
 
 p{
   color: #5e5e5e;
