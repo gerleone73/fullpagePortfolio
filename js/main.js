@@ -13,7 +13,16 @@
       continuousVertical: false,
       animateAnchor: true,
       afterLoad: function(anchorLink) {
+        if (anchorLink === "firstPage") 
+          $(".counter").text("1");
+        if (anchorLink === "secondPage") 
+          $(".counter").text("2");
+          if (anchorLink === "thirdPage") 
+          $(".counter").text("3");
+          if (anchorLink === "fourthPage") 
+          $(".counter").text("4");
         if (anchorLink === "fifthPage") {
+          $(".counter").text("5");
           $(".magic").addClass("animated bounceInLeft");
           $(".trophy").addClass("animated bounceInUp");
           return $(".users").addClass("animated bounceInRight");
