@@ -2,7 +2,7 @@
   $(function() {
     $("#fullpage").fullpage({
       anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eigthPage","ninthPage", "tenthPage"],
-      slidesColor: ["#eef2f2", "#ebebeb", "#eef2f2","#ebebeb", "#eef2f2","#ebebeb", "#eef2f2","#ebebeb","#eef2f2"],
+      slidesColor: ["#eef2f2", "#ebebeb", "#eef2f2","#ebebeb", "#eef2f2","#ebebeb", "#eef2f2","#ebebeb","#eef2f2","#ebebeb"],
       navigation: true,
         navigationPosition: 'right',
         navigationTooltips: false,
@@ -13,8 +13,10 @@
       continuousVertical: false,
       animateAnchor: true,
       afterLoad: function(anchorLink) {
-        if (anchorLink === "firstPage") 
+        if (anchorLink === "firstPage") {
           $(".counter").text("1");
+        $(".counter").css({'backgroundColor': '#DD8F00'});
+        }
         if (anchorLink === "secondPage") 
           $(".counter").text("2");
           if (anchorLink === "thirdPage") 
