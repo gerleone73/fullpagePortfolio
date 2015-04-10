@@ -487,8 +487,8 @@ body.fullPage-portfolio {
   cursor: pointer;
   margin-top: -64px;
   font-family: FontAwesome;
-  font-size: 90px;
-  color: white; }
+  font-size: 45px;
+  color: #5e5e5e; }
   .controlArrow.prev {
     left: 20px; }
     .controlArrow.prev:after {
@@ -1086,6 +1086,12 @@ color:#5e5e5e;
   line-height: 32px;
    font-family: 'Playfair Display', serif;
    font-weight: 700;
+ }
+
+
+ .slide img, .slide p{
+  margin:0 auto;
+  text-align: center
  }
 
 @media screen and (max-height: 30.5em) {

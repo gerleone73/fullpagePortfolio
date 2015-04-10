@@ -2,7 +2,7 @@
   $(function() {
     $("#fullpage").fullpage({
       anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eightPage","ninthPage"],
-      slidesColor: ["#FFFAFA", "#ebebeb", "#FFFAFA","#ebebeb", "#FFFAFA","#ebebeb", "#FFFAFA","#ebebeb","#FFFAFA"],
+      slidesColor: ["#eef2f2", "#ebebeb", "#eef2f2","#ebebeb", "#eef2f2","#ebebeb", "#eef2f2","#ebebeb","#eef2f2"],
       navigation: true,
         navigationPosition: 'right',
         navigationTooltips: false,
