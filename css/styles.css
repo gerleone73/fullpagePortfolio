@@ -910,7 +910,7 @@ hr{
 }
 
 #section0 h1{
-  color:#DD8F00;
+  color:#ffa500;
   margin-top: 0;
 }
 
@@ -925,7 +925,7 @@ hr{
 }
 
 #section3 h1{
-  color:#2380E8;
+  color:#FD301B;
 }
 
 #section4 h1{
@@ -973,8 +973,8 @@ border:#FF7900;
 
 
 #section3 .btn-warning:hover{
-background-color: #2380E8;
-border: #2380E8;
+background-color: #FD301B;
+border: #FD301B;
 }
 
 #section4 .btn-warning:hover{
