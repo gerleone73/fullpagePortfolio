@@ -1,8 +1,8 @@
 (function() {
   $(function() {
     $("#fullpage").fullpage({
-      anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage"],
-      slidesColor: ["#FFFAFA", "#ebebeb", "#FFFAFA","#ebebeb", "#FFFAFA","#ebebeb", "#FFFAFA"],
+      anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eightPage"],
+      slidesColor: ["#FFFAFA", "#ebebeb", "#FFFAFA","#ebebeb", "#FFFAFA","#ebebeb", "#FFFAFA","#ebebeb"],
       navigation: true,
         navigationPosition: 'right',
         navigationTooltips: false,
@@ -21,8 +21,9 @@
           $(".counter").text("3");
           if (anchorLink === "fourthPage") 
           $(".counter").text("4");
-        if (anchorLink === "fifthPage") {
+        if (anchorLink === "fifthPage") 
           $(".counter").text("5");
+        if (anchorLink === "sixthPage"){
           $(".magic").addClass("animated bounceInLeft");
           $(".trophy").addClass("animated bounceInUp");
           return $(".users").addClass("animated bounceInRight");

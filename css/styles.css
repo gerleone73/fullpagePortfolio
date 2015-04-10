@@ -597,7 +597,7 @@ body.fullPage-portfolio {
     text-align: center;
     position: relative;
     top: 50%;
-    font-size: 56px;
+    font-size: 28px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
   .overlay ul {
@@ -610,15 +610,17 @@ body.fullPage-portfolio {
     .overlay ul li {
       font-family: 'Playfair Display', serif;
       display: block;
-      height: 25%;
-      min-height: 54px; }
+      
+      min-height: 28px; }
+
       .overlay ul li a {
         font-weight: 300;
         display: block;
         color: #5e5e5e;
         -webkit-transition: opacity 0.2s;
         transition: opacity 0.2s;
-        border-bottom: 1px solid #5e5e5e; }
+        /*border-bottom: 1px solid #5e5e5e; */
+      }
         .overlay ul li a:hover, .overlay ul li a:focus {
           opacity: 0.5;
           text-decoration: none; }
@@ -899,6 +901,9 @@ p{
   line-height: 1.5em;
 }
 
+hr{
+  margin:5px;
+}
 
 #section h2{
   margin-bottom: .75em;
@@ -909,7 +914,7 @@ p{
   margin-top: 0;
 }
 
-#section1 h1{
+#section h1{
   color:#303030;
   margin-top: 0;
 }
@@ -917,6 +922,10 @@ p{
 #section2 h1{
   color:#FF7900;
   margin-top: 0;
+}
+
+#section3 h1{
+  color:#2380E8;
 }
 
 .btn{
@@ -932,37 +941,34 @@ p{
   letter-spacing: 0.1em;
 
 }
-#section0 .btn-warning{
+.section .btn-warning{
+  background-color:#333;
+border:#333;
+
+}
+
+#section0 .btn-warning:hover{
 background-color:#DD8F00;
 border:#DD8F00;
 }
 
-#section0 .btn-warning:hover{
-background-color:#333;
-border:#333;
-}
-
-#section1 .btn-warning{
+#section1 .btn-warning:hover{
 background-color:#5e5e5e;
 border: #5e5e5e;
 }
 
-#section1 .btn-warning:hover{
-background-color:#333;
-border:#333;
-}
 
 
-#section2 .btn-warning{
+#section2 .btn-warning:hover{
 background-color:#FF7900;
 border:#FF7900;
 }
 
-#section2 .btn-warning:hover{
-background-color:#333;
-border:#333;
-}
 
+#section3 .btn-warning:hover{
+background-color: #2380E8;
+border: #2380E8;
+}
 
 
 
@@ -1076,9 +1082,9 @@ color:#5e5e5e;
 @media screen and (max-height: 30.5em) {
   .overlay nav {
     height: 70%;
-    font-size: 34px; }
+    font-size: 21px; }
   .overlay ul li {
-    min-height: 34px; } }
+    min-height: 21px; } }
 #menu {
   position: fixed;
   z-index: 70;
