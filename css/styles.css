@@ -931,6 +931,9 @@ hr{
 #section4 h1{
 color:#3F0B3F;
 }
+ #section6 h1{
+color:#BA3126;
+}
 
 .btn{
   font-family: 'Open Sans', sans-serif;
@@ -975,8 +978,13 @@ border: #2380E8;
 }
 
 #section4 .btn-warning:hover{
-background-color: #3F0B3F;;
-border: #3F0B3F;;
+background-color: #3F0B3F;
+border: #3F0B3F;
+}
+
+#section6 .btn-warning:hover{
+background-color: #BA3126;
+border: #BA3126;
 }
 
 
@@ -1027,13 +1035,23 @@ i.icon-antenna{
 }
 
 .arrow-down{
-font-size: 25px;
-color:#5e5e5e;
-
+ font-size: 16px;
+  border:1px solid #5e5e5e;
+  width:32px;
+  height:32px;
+  border-radius: 50%;
+  color: #5e5e5e;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
+  padding-top: 1px;
 }
 
 .scroll-down{
   margin: 0;
+  padding-bottom: 5px;
 }
 
 
@@ -1056,8 +1074,8 @@ color:#5e5e5e;
   text-align: center;
   vertical-align: middle;
   position:fixed;
-  bottom:64px;
-  right:32px;
+  bottom:57px;
+  right:25px;
   color:#333;
   z-index: 999;
   font-size: 16px;
@@ -1072,8 +1090,8 @@ color:#5e5e5e;
   text-align: center;
   vertical-align: middle;
   position:fixed;
-  bottom:32px;
-  right:32px;
+  bottom:25px;
+  right:25px;
   color:#333;
   z-index: 999;
   font-size: 16px;
