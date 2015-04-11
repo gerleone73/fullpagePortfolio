@@ -1151,11 +1151,7 @@ i.icon-antenna{
   text-align: center
  }
 
-#section7 .img-responsive{
 
-  
-  text-align: left;
-}
 
 
 .anime {
@@ -1264,13 +1260,13 @@ i.icon-antenna{
 .row.col-md-5{ text-align:center!important;
 }  
 #fullpage{
-  text-align:center;
+  
 }
 
-#section0 h1{
+.section h1{
   font-size: 35px;
 }
-#section0 h2{
+.section h2{
   font-size: 25px;
 }
 }
