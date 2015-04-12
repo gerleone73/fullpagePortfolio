@@ -892,6 +892,13 @@ body.no-scrollbar {
   overflow: hidden;
 }
 
+.cover img{
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .menuTip{
   position: fixed;
   top:60px;
@@ -927,9 +934,25 @@ body.no-scrollbar {
 
 .typed{
 
-  height:1em;
+  font-size:5em;
 }
 
+.css-typing
+{
+    width:10em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
 
 .space{
   padding-right: 10px;

@@ -16,11 +16,15 @@
       afterLoad: function(anchorLink) {
         if (anchorLink === "firstPage") {
           $(".counter").text("1");
+          $(".typing1").addClass('css-typing');
+         
        
         $(".arrow-down").css({'color': '#DD8F00', 'border':'1px solid #DD8F00'});
         }
         if (anchorLink === "secondPage") {
           $(".counter").text("2");
+          $(".typing2").addClass('css-typing');
+
         $(".arrow-down").css({'color': '#333','border':'1px solid #333'});
         }
           if (anchorLink === "thirdPage") {
@@ -59,7 +63,7 @@
 
 
     
-
+$('.birdman').birdman();
 
 
 
