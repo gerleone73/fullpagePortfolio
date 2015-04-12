@@ -487,16 +487,16 @@ body.fullPage-portfolio {
   cursor: pointer;
   margin-top: -64px;
   font-family: FontAwesome;
-  font-size: 45px;
+  font-size: 24px;
   color: #5e5e5e; }
   .controlArrow.prev {
     left: 20px; }
     .controlArrow.prev:after {
-      content: "\f104"; }
+      content: "\f177 "; }
   .controlArrow.next {
     right: 20px; }
     .controlArrow.next:after {
-      content: "\f105"; }
+      content: "\f178"; }
 
 .scrollable {
   overflow: scroll; }
@@ -903,7 +903,32 @@ body.no-scrollbar {
   opacity: .8;
 }
 
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 
+.typed{
+
+  height:1em;
+}
 
 
 .space{

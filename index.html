@@ -9,7 +9,7 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   
     
-
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
     
 
 
@@ -40,7 +40,9 @@
 
     <div class="counter">1</div>
     <div class="total">10</div>
-    <div class="menuTip">&#9757;</div>
+  
+
+    <div class="menuTip faa-float animated">&#9757;</div>
 
 
   <div class="section active" id="section0">
@@ -63,7 +65,8 @@
 
                 </div>
                 <div class="col-md-1"></div>
-                <div class="col-md-5"><h1>WISE WORDS...</h1>
+                <div class="col-md-5"><h1 class="typed"></h1>
+
                 <h2>RESPONSIVE QUIZ APP</h2>
                 <h3><i class="space icon-mobile-device"></i><i class="space icon-html"></i><i class="space icon-css"></i><i class="space js icon-javascript"></i><span><img class="git" src="images/github-icon-1.png"></span></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quos ipsa accusamus ratione alias adipisci dicta veniam quis enim libero tempora architecto eveniet, amet sit. Minus fuga error officia deserunt.</p>
@@ -78,7 +81,7 @@
     </div>
           <div class="scroll-down">
             
-            <div class="arrow-down">V</div>
+            <div class="arrow-down faa-pulse animated faa-slow">V</div>
           </div>
         </div>
       </div>
@@ -330,6 +333,11 @@
         
       </div>
 
+      <div class="scroll-down">
+            
+            <div class="arrow-down">V</div>
+          </div>
+
       </div>
 
 
@@ -522,5 +530,42 @@
      <script src="js/jquery.tcycle.js"></script>
     <script src="js/plugin.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/typed.js"></script>
+
+   <script>
+    $(function(){
+        $(".typed").typed({
+            strings: ["WISE WORDS..."],
+            // typing speed
+            typeSpeed: 0,
+            // time before typing starts
+            startDelay: 500,
+            // backspacing speed
+            backSpeed: 0,
+            // time before backspacing
+            backDelay: 500,
+            // loop
+            loop: false,
+            // false = infinite
+            loopCount: false,
+            // show cursor
+            showCursor: false,
+            // character for cursor
+            cursorChar: "|",
+            // attribute to type (null == text)
+            attr: null,
+            // either html or text
+            contentType: 'html',
+            // call when done callback function
+            callback: function() {},
+            // starting callback function before each string
+            preStringTyped: function() {},
+            //callback for every typed string
+            onStringTyped: function() {},
+            // callback for reset
+            resetCallback: function() {}
+        });
+    });
+</script>
   </body>
 </html>
