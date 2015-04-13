@@ -60,7 +60,13 @@
         }
          if (anchorLink === "tenthPage") {
           $(".counter").text("10");
-          $('.birdman').birdman();
+          
+    
+      $('.birdman').birdman({
+
+                    delay:1300
+                  });
+  
           $('#red').css('color', 'red');
         $(".arrow-down").css({'color': '#3285E7','border':'1px solid #3285E7'});
         }

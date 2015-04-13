@@ -1165,17 +1165,27 @@ i.icon-antenna{
 
 
 .jarmusch .lettering {
-  font-size:4em;
-  font-weight: 600;
+  font-size:1em;
+  font-weight: 100;
   text-transform: uppercase;
+  font-family: 'Open Sans';
+  color:#333;
 }
 
-.lettering #red{
-  color: red;
+.nothing{
+  color: #333;
+  font-size:4em;
+  font-weight: 100;
+  text-transform: uppercase;
+ font-family: 'Open Sans';
 }
 
-.red{
-  color: red;
+.blue{
+  color:blue;
+  font-size:4em;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
 }
 
 .scroll-down{
