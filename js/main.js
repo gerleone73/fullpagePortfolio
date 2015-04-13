@@ -63,18 +63,19 @@
         }
          if (anchorLink === "eleventhPage") {
           $(".counter").text("11");
-          
-    
-      $('.birdman').birdman({
+          $('.birdman').birdman({
 
-                    delay:900
-                  });
-      $('.nothing').fadeIn(11000);
-      $('.author').fadeIn(11000);
-  
+                        delay:900
+                      });
+          $('.nothing').fadeIn(11000);
+          $('.author').fadeIn(11000);
           $('#red').css('color', 'red');
-        $(".arrow-down").css({'color': '#3285E7','border':'1px solid #3285E7'});
+          $(".arrow-down").css({'color': '#3285E7','border':'1px solid #3285E7'});
         }
+          if (anchorLink !== "eleventhPage"){
+             $('.nothing').fadeOut(100);
+          $('.author').fadeOut(100);
+          }
       }
     });
 
