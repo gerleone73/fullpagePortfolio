@@ -1170,11 +1170,23 @@ i.icon-antenna{
   text-transform: uppercase;
   font-family: 'Open Sans';
   color:#333;
+  text-align: justify!important;
+  text-justify: inter-word;
+}
+
+.justify{
+  text-align: justify!important;
+   text-justify: inter-word;
+  line-height: 2.5em;
+}
+
+ .col-md-6 .centered{
+  margin: 0 auto;
 }
 
 .nothing{
   color: #333;
-  font-size:4em;
+  font-size:1em;
   font-weight: 100;
   text-transform: uppercase;
  font-family: 'Open Sans';
@@ -1182,7 +1194,7 @@ i.icon-antenna{
 
 .blue{
   color:blue;
-  font-size:4em;
+  font-size:3em;
   font-weight: 100;
   text-transform: uppercase;
   font-family: 'Open Sans';
