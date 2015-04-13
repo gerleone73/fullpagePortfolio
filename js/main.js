@@ -58,8 +58,11 @@
           $(".trophy").addClass("animated bounceInUp");
           return $(".users").addClass("animated bounceInRight");
         }
-         if (anchorLink === "eleventhPage") {
+        if (anchorLink === "tenthPage") {
           $(".counter").text("10");
+        }
+         if (anchorLink === "eleventhPage") {
+          $(".counter").text("11");
           
     
       $('.birdman').birdman({
