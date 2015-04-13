@@ -67,8 +67,8 @@
 
                         delay:900
                       });
-          $('.nothing').fadeIn(11000);
-          $('.author').fadeIn(11000);
+          $('.nothing').fadeIn(9000);
+          $('.author').fadeIn(9000);
           $('#red').css('color', 'red');
           $(".arrow-down").css({'color': '#3285E7','border':'1px solid #3285E7'});
         }

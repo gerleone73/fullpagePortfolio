@@ -1167,7 +1167,7 @@ i.icon-antenna{
 .jarmusch .lettering {
   font-size:1em;
   font-weight: 100;
-  font-family: 'Open Sans';
+  font-family: 'new_yorkerregular';
   color:#333;
   text-justify: inter-word;
    text-transform: uppercase;
@@ -1176,7 +1176,7 @@ i.icon-antenna{
 .justify{
   text-align: justify!important;
    text-justify: inter-word;
-  line-height: 1.75em;
+  line-height: 1.6em;
 
 }
 
@@ -1190,7 +1190,7 @@ i.icon-antenna{
   font-size:1em;
   font-weight: 400;
   text-transform: uppercase;
- font-family: 'Open Sans';
+ font-family: 'new_yorkerregular';
  display: none;
 }
 
@@ -1200,13 +1200,7 @@ i.icon-antenna{
    display: none;
 }
 
-.blue{
-  color:blue;
-  font-size:3em;
-  font-weight: 100;
-  text-transform: uppercase;
-  font-family: 'Open Sans';
-}
+
 
 .scroll-down{
   margin: 0;
