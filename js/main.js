@@ -60,7 +60,7 @@
         }
          if (anchorLink === "tenthPage") {
           $(".counter").text("10");
-          
+          $('.nothing').fadeIn(2000);
     
       $('.birdman').birdman({
 

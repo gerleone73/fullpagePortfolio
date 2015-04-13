@@ -1177,10 +1177,11 @@ i.icon-antenna{
 .justify{
   text-align: justify!important;
    text-justify: inter-word;
-  line-height: 2.5em;
+  line-height: 1.75em;
 }
 
- .col-md-6 .centered{
+.col-md-4.centered{
+  float: none !important;
   margin: 0 auto;
 }
 
@@ -1190,6 +1191,7 @@ i.icon-antenna{
   font-weight: 100;
   text-transform: uppercase;
  font-family: 'Open Sans';
+ display: none;
 }
 
 .blue{
