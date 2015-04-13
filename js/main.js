@@ -2,7 +2,7 @@
   $(function() {
     $("#fullpage").fullpage({
       anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eigthPage","ninthPage", "tenthPage", "eleventhPage"],
-      slidesColor: ["#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
+      slidesColor: ["#fff", "#e6e6e6", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
      
        slidesNavigation: true,
         slidesNavPosition: 'top',
@@ -58,12 +58,18 @@
           $(".trophy").addClass("animated bounceInUp");
           return $(".users").addClass("animated bounceInRight");
         }
+         if (anchorLink === "tenthPage") {
+          $(".counter").text("10");
+          $('.birdman').birdman();
+          $('#red').css('color', 'red');
+        $(".arrow-down").css({'color': '#3285E7','border':'1px solid #3285E7'});
+        }
       }
     });
 
 
     
-$('.birdman').birdman();
+
 
 
 

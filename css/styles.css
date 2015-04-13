@@ -24,6 +24,21 @@
   font-style: normal;
   font-weight: 900;
   src: local("Source Sans Pro Black"), local("SourceSansPro-Black"), url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGC7eGk4PJkA83J1AXCmgUfc.woff) format("woff"); }
+*/
+
+
+@font-face {
+    font-family: 'new_yorkerregular';
+    src: url('newyorkr-webfont.eot');
+    src: url('newyorkr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('newyorkr-webfont.woff2') format('woff2'),
+         url('newyorkr-webfont.woff') format('woff'),
+         url('newyorkr-webfont.ttf') format('truetype'),
+         url('newyorkr-webfont.svg#new_yorkerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*----------------------------------------------------------------------------------- */
 /*  Document Setup */
@@ -33,14 +48,14 @@
 
 body {
   
-  color: #5e5e5e;;
+  color: #5e5e5e;
   background-color: #eef2f2;
   font-size: 15px;
   padding-bottom: 50px; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 400;
-  font-family: 'Playfair Display', serif;
+   font-family: 'Playfair Display';
   letter-spacing: 0.05em;
    }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
@@ -52,10 +67,14 @@ h1, .h1 {
    }
 
 h2, .h2 {
-  font-size: 30px; }
+  
+  font-size: 30px;
+  color: #333; 
+text-transform: uppercase;}
 
 h3, .h3 {
-  font-size: 25px; }
+  font-size: 25px;
+  color: #5e5e5e; }
 
 h4, .h4 {
   font-size: 20px; }
@@ -830,7 +849,7 @@ html, body {
     height: 4px;
     width: 4px;
     border: 0;
-    background: #333;
+    background: #5e5e5e;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -882,14 +901,19 @@ body {
   height: 100%;
 }
 body {
-  font-family: "Open Sans";
   font-weight: 400;
   font-size: 100%;
   text-rendering: optimizelegibility;
+  color:#000;
 }
 
 body.no-scrollbar {
   overflow: hidden;
+}
+
+
+.img-responsive{
+  margin: 0 auto;
 }
 
 .cover img{
@@ -905,7 +929,7 @@ body.no-scrollbar {
 
   right:15px;
   z-index:99999999;
-  color:#333;
+  color:#5e5e5e;
   font-size: 40px;
   opacity: .8;
 }
@@ -960,7 +984,7 @@ body.no-scrollbar {
 }
 .git{
   padding-bottom: 7px;
-  opacity: 0.7;
+  opacity: .7;
 }
 .js{
   margin-bottom: 15px;
@@ -970,7 +994,9 @@ p{
   color: #5e5e5e;
   font-size: 16px;
   line-height: 1.5em;
+  font-family: 'Open Sans';
 }
+
 
 hr{
   margin:5px;
@@ -1082,7 +1108,7 @@ span.strike {
  font-size: 46px;
  margin: 0;
  padding:10px;
- font-family: 'Montserrat', sans-serif;
+ font-family: 'new_yorkerregular', sans-serif;
  font-weight: 700;
  letter-spacing: -0.3em;
  color:#5e5e5e;
@@ -1136,6 +1162,22 @@ i.icon-antenna{
   padding-top: 1px;
 }
 
+
+
+.jarmusch .lettering {
+  font-size:4em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.lettering #red{
+  color: red;
+}
+
+.red{
+  color: red;
+}
+
 .scroll-down{
   margin: 0;
   padding-bottom: 5px;
@@ -1170,7 +1212,7 @@ i.icon-antenna{
   width: 32px;
   height:32px;
   line-height: 32px;
-   font-family: 'Playfair Display', serif;
+   font-family: 'Playfair-Display', serif;
     font-weight: 700;
 }
 .total{
@@ -1189,7 +1231,7 @@ i.icon-antenna{
   height:32px;
   padding-top:1px;
   line-height: 32px;
-   font-family: 'Playfair Display', serif;
+   font-family: 'Playfair-Display',serif;
    font-weight: 700;
  }
 
@@ -1316,5 +1358,8 @@ i.icon-antenna{
 }
 .section h2{
   font-size: 25px;
+}
+.section p{
+  font-size: 14px;
 }
 }

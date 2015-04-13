@@ -24,13 +24,13 @@
   var methods = {
     init : function() {
       return this.each(function() {
-        injector($(this), '', 'letters', '');
+        injector($(this), '', 'words', '');
       });
     },
 
-    words : function() {
+    letters : function() {
       return this.each(function() {
-        injector($(this), ' ', 'words', ' ');
+        injector($(this), ' ', 'letters', ' ');
       });
     },
     
@@ -50,7 +50,7 @@
     // Method calling logic, "this" is the collection of DOM elements the function was called on.
     if ( method && methods[method] ) {
       return methods[method].apply( this, Array.prototype.slice.call( arguments, 0 ));
-    } else if ( method === 'letters' || ! method ) {
+    } else if ( method === 'words' || ! method ) {
       return methods.init.apply( this, Array.prototype.slice.call( arguments, 0 ) );
     }
     $.error( 'Method ' +  method + ' does not exist on jQuery.lettering' );
@@ -78,14 +78,14 @@
     * Default Parameters
     */
     if ( !params ) params = {};
-    params.method = defaultFor(params.method, 'letters');
+    params.method = defaultFor(params.method, 'words');
     var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
     var capitalAlphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
     var numbers = ['0','1','2','3','4','5','6','7','8','9'];
     var specialChars = ['-','+','*','_','~','<','>','|','.','?','!', '§','$','%','&','quot','/','(',')','[',']','{','}','='];
     var combinedAlphabet = zip(alphabet, capitalAlphabet).concat(numbers).concat([specialChars]);
     params.order = defaultFor(params.order, combinedAlphabet);
-    params.delay = defaultFor(params.delay, 450);
+    params.delay = defaultFor(params.delay, 950);
     params.speedUp = defaultFor(params.speedUp, true);
 
     /*
