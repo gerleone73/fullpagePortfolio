@@ -1167,17 +1167,17 @@ i.icon-antenna{
 .jarmusch .lettering {
   font-size:1em;
   font-weight: 100;
-  text-transform: uppercase;
   font-family: 'Open Sans';
   color:#333;
-  text-align: justify!important;
   text-justify: inter-word;
+   text-transform: uppercase;
 }
 
 .justify{
   text-align: justify!important;
    text-justify: inter-word;
   line-height: 1.75em;
+
 }
 
 .col-md-4.centered{
@@ -1188,10 +1188,16 @@ i.icon-antenna{
 .nothing{
   color: #333;
   font-size:1em;
-  font-weight: 100;
+  font-weight: 400;
   text-transform: uppercase;
  font-family: 'Open Sans';
  display: none;
+}
+
+.author{
+  text-align: right!important;
+  font-size:1.25em;
+   display: none;
 }
 
 .blue{

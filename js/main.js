@@ -58,14 +58,16 @@
           $(".trophy").addClass("animated bounceInUp");
           return $(".users").addClass("animated bounceInRight");
         }
-         if (anchorLink === "tenthPage") {
+         if (anchorLink === "eleventhPage") {
           $(".counter").text("10");
-          $('.nothing').fadeIn(2000);
+          
     
       $('.birdman').birdman({
 
-                    delay:1300
+                    delay:900
                   });
+      $('.nothing').fadeIn(11000);
+      $('.author').fadeIn(11000);
   
           $('#red').css('color', 'red');
         $(".arrow-down").css({'color': '#3285E7','border':'1px solid #3285E7'});
