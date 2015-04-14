@@ -51,11 +51,11 @@ body {
   color: #5e5e5e;
   background-color: #eef2f2;
   font-size: 15px;
-  padding-bottom: 50px; }
+  }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 400;
-   font-family: 'Playfair Display';
+   font-family: Futura;
   letter-spacing: 0.05em;
    }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
@@ -64,17 +64,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 h1, .h1 {
   font-size: 6em;
   font-weight: 300;
+margin-bottom: -10px;
    }
 
 h2, .h2 {
-  
+  font-family: Futura;
   font-size: 30px;
   color: #333; 
-text-transform: uppercase;}
+}
 
 h3, .h3 {
   font-size: 25px;
-  color: #5e5e5e; }
+  color: #333; }
 
 h4, .h4 {
   font-size: 20px; }
@@ -929,7 +930,7 @@ body.no-scrollbar {
 
   right:15px;
   z-index:99999999;
-  color:#5e5e5e;
+  color:#444;
   font-size: 40px;
   opacity: .8;
 }
@@ -984,17 +985,18 @@ body.no-scrollbar {
 }
 .git{
   padding-bottom: 7px;
-  opacity: .7;
+  opacity: .9;
 }
 .js{
   margin-bottom: 15px;
 }
 
 p{
-  color: #5e5e5e;
-  font-size: 16px;
-  line-height: 1.5em;
-  font-family: 'Open Sans';
+  color: #444;
+  font-size: 17px;
+  line-height: 1.3em;
+  font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+  font-weight: 100;
 }
 
 
@@ -1003,7 +1005,9 @@ hr{
 }
 
 #section h2{
+
   margin-bottom: .75em;
+ font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
 }
 
 #section0 h1{
@@ -1050,8 +1054,8 @@ color:#BA3126;
 
 }
 .section .btn-warning{
-  background-color:#333;
-border:#333;
+  background-color:#444;
+border:#444;
 
 }
 
@@ -1115,7 +1119,7 @@ span.strike {
  width: 70px;
   height: 65px;
  
-  background-color: rgba(250,250,250, .75)
+  background-color: rgba(250,250,250, 1)
 }
 
 
@@ -1165,10 +1169,10 @@ i.icon-antenna{
 
 
 .jarmusch .lettering {
-  font-size:1em;
+  font-size:1.1em;
   font-weight: 100;
-  font-family: 'new_yorkerregular';
-  color:#333;
+  font-family:'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+  color:#444;
   text-justify: inter-word;
    text-transform: uppercase;
 }
@@ -1185,14 +1189,15 @@ i.icon-antenna{
   margin: 0 auto;
 }
 
-.nothing{
-  color: #333;
-  font-size:1em;
-  font-weight: 400;
+.nothing, .godard{
+  color: red;
+  font-size:1.5em;
+  font-weight: 100;
   text-transform: uppercase;
- font-family: 'new_yorkerregular';
+ font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
  display: none;
 }
+
 
 .author{
   text-align: right!important;
@@ -1229,15 +1234,15 @@ i.icon-antenna{
   position:fixed;
   bottom:57px;
   right:25px;
-  color:#333;
+  color:#444;
   z-index: 999;
   font-size: 16px;
   border:1px solid #5e5e5e;
   width: 32px;
   height:32px;
   line-height: 32px;
-   font-family: 'Playfair-Display', serif;
-    font-weight: 700;
+   font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+    font-weight: 100;
 }
 .total{
   text-align: center;
@@ -1245,7 +1250,7 @@ i.icon-antenna{
   position:fixed;
   bottom:25px;
   right:25px;
-  color:#333;
+  color:#444;
   z-index: 999;
   font-size: 16px;
   border-bottom:1px solid #5e5e5e;
@@ -1255,8 +1260,8 @@ i.icon-antenna{
   height:32px;
   padding-top:1px;
   line-height: 32px;
-   font-family: 'Playfair-Display',serif;
-   font-weight: 700;
+   font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+   font-weight: 100;
  }
 
 
@@ -1264,7 +1269,6 @@ i.icon-antenna{
   margin:0 auto;
   text-align: center
  }
-
 
 
 
