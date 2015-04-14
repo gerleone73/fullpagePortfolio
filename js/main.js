@@ -1,7 +1,7 @@
 (function() {
   $(function() {
     $("#fullpage").fullpage({
-      anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eigthPage","ninthPage", "tenthPage", "eleventhPage"],
+      anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eigthPage","ninthPage", "tenthPage", "eleventhPage", "twelfthpage"],
       slidesColor: ["#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
 
 
@@ -16,6 +16,10 @@
       continuousVertical: true,
       animateAnchor: true,
       afterLoad: function(anchorLink) {
+        if (anchorLink === "twelfthPage") {
+          $("#fullpage").fullpage({scrollBar: true});
+        }
+
         if (anchorLink === "firstPage") {
           $(".counter").text("1");
           $(".typing1").addClass('css-typing');

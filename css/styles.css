@@ -1234,6 +1234,7 @@ i.icon-antenna{
   bottom:57px;
   right:25px;
   color:#444;
+  background-color: #fff;
   z-index: 999;
   font-size: 16px;
   border:1px solid #5e5e5e;
@@ -1250,6 +1251,7 @@ i.icon-antenna{
   bottom:25px;
   right:25px;
   color:#444;
+  background-color:#fff;
   z-index: 999;
   font-size: 16px;
   border-bottom:1px solid #5e5e5e;
@@ -1372,7 +1374,9 @@ i.icon-antenna{
 
  
 
-
+.overlay{
+  overflow-y: scroll;
+}
 
 .row.col-md-5{ text-align:center!important;
 }  
