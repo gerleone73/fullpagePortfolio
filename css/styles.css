@@ -55,8 +55,8 @@ body {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 400;
-   font-family: Futura;
-  letter-spacing: 0.05em;
+   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+     letter-spacing: 0.05em;
    }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
     font-size: 55%; }
@@ -68,7 +68,7 @@ margin-bottom: -10px;
    }
 
 h2, .h2 {
-  font-family: Futura;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   font-size: 30px;
   color: #333; 
 }
@@ -911,6 +911,8 @@ body {
 body.no-scrollbar {
   overflow: hidden;
 }
+
+
 
 
 .img-responsive{

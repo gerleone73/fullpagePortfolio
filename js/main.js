@@ -2,16 +2,18 @@
   $(function() {
     $("#fullpage").fullpage({
       anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eigthPage","ninthPage", "tenthPage", "eleventhPage"],
-      slidesColor: ["#fff", "#e6e6e6", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
+      slidesColor: ["#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
+
+
      
        slidesNavigation: true,
         slidesNavPosition: 'top',
 
-      scrollingSpeed: 900,
-      easing: 'easeInExpo',
+      scrollingSpeed: 1200,
+      easing: 'easeInOutExpo',
       keyboardScrolling: true,
       touchSensitivity: 10,
-      continuousVertical: false,
+      continuousVertical: true,
       animateAnchor: true,
       afterLoad: function(anchorLink) {
         if (anchorLink === "firstPage") {
@@ -65,15 +67,15 @@
           $(".counter").text("11");
           $('.nothing').fadeIn('slow').birdman({
                         speedup:false,
-                        delay:300
+                        delay:0
                       });
           $('.birdman').fadeIn().birdman({
                         speedup:false,
-                        delay:800
+                        delay:900
                       });
            $('.godard').fadeIn().birdman({
                         speedup:true,
-                        delay:800
+                        delay:300
                       });
           
           
