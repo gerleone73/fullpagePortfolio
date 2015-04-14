@@ -1,4 +1,4 @@
-/*----------------------------------------------------------------------------------- */
+*----------------------------------------------------------------------------------- */
 /*  Fonts */
 /*----------------------------------------------------------------------------------- */
 /*@font-face {
@@ -6,19 +6,16 @@
   font-style: normal;
   font-weight: 400;
   src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format("woff"); }
-
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 600;
   src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format("woff"); }
-
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 700;
   src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff) format("woff"); }
-
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
@@ -617,7 +614,7 @@ body.fullPage-portfolio {
   height: 100%;
   top: 0;
   left: 0;
-  background: #eef2f2;
+  background: #fff;
   z-index: 50; }
   .overlay nav {
     text-align: center;
@@ -634,7 +631,7 @@ body.fullPage-portfolio {
     height: 100%;
     position: relative; }
     .overlay ul li {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
       display: block;
       
       min-height: 28px; }
@@ -642,13 +639,13 @@ body.fullPage-portfolio {
       .overlay ul li a {
         font-weight: 300;
         display: block;
-        color: #5e5e5e;
+        color: #333;
         -webkit-transition: opacity 0.2s;
         transition: opacity 0.2s;
         /*border-bottom: 1px solid #5e5e5e; */
       }
         .overlay ul li a:hover, .overlay ul li a:focus {
-          opacity: 0.5;
+          opacity: 0.75;
           text-decoration: none; }
 
 .overlay {
@@ -1243,7 +1240,7 @@ i.icon-antenna{
   width: 32px;
   height:32px;
   line-height: 32px;
-   font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+      font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-weight: 100;
 }
 .total{
@@ -1262,7 +1259,7 @@ i.icon-antenna{
   height:32px;
   padding-top:1px;
   line-height: 32px;
-   font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+      font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
    font-weight: 100;
  }
 
