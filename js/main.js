@@ -1,8 +1,11 @@
 (function() {
   $(function() {
+
+
+
     $("#fullpage").fullpage({
-      anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eigthPage","ninthPage", "tenthPage", "eleventhPage", "twelfthpage"],
-      sectionsColor: ["#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
+      anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eigthPage","ninthPage", "tenthPage", "eleventhPage", "twelfthPage"],
+      sectionsColor: ["#ebebeb","#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
 
 
      
@@ -16,61 +19,70 @@
       touchSensitivity: 10,
       animateAnchor: true,
       afterLoad: function(anchorLink) {
-        if (anchorLink === "twelfthPage") {
-          $("#fullpage").fullpage({scrollBar: true});
-        }
+
 
         if (anchorLink === "firstPage") {
           $(".counter").text("1");
-          $(".typing1").addClass('css-typing');
-         
-       
-        $(".arrow-down").css({'color': '#DD8F00', 'border':'1px solid #DD8F00'});
+           $(".arrow-down").css({'color': '#fff'});
+
+        }
+
+        if(anchorLink!=='firstpage'){
+          $('.Gl').fadeIn();
+          $('.menuTip').fadeIn();
         }
         if (anchorLink === "secondPage") {
           $(".counter").text("2");
-          $(".typing2").addClass('css-typing');
 
-        $(".arrow-down").css({'color': '#333','border':'1px solid #333'});
+         
+         
+       
+        $(".arrow-down").css({'color': '#DD8F00'});
         }
-          if (anchorLink === "thirdPage") {
+        if (anchorLink === "thirdPage") {
           $(".counter").text("3");
-        $(".arrow-down").css({'color': '#FF7900','border':'1px solid #FF7900'});
+        
+
+        $(".arrow-down").css({'color': '#333'});
         }
-          if (anchorLink === "fourthPage") { 
+          if (anchorLink === "fourthPage") {
           $(".counter").text("4");
-        $(".arrow-down").css({'color': '#FD301B;','border':'1px solid #FD301B;'});
+        $(".arrow-down").css({'color': '#FF7900'});
         }
-        if (anchorLink === "fifthPage") {
+          if (anchorLink === "fifthPage") { 
           $(".counter").text("5");
-        $(".arrow-down").css({'color': '#3F0B3F','border':'1px solid #3F0B3F'});
+        $(".arrow-down").css({'color': '#FD301B'});
         }
-      
         if (anchorLink === "sixthPage") {
           $(".counter").text("6");
-        $(".arrow-down").css({'color': '#5e5e5e','border':'1px solid #5e5e5e'});
+        $(".arrow-down").css({'color': '#3F0B3F'});
         }
+      
         if (anchorLink === "seventhPage") {
           $(".counter").text("7");
-        $(".arrow-down").css({'color': '#BA3126','border':'1px solid #BA3126'});
+        $(".arrow-down").css({'color': '#5e5e5e'});
         }
         if (anchorLink === "eigthPage") {
           $(".counter").text("8");
-        $(".arrow-down").css({'color': '#3285E7','border':'1px solid #3285E7'});
+        $(".arrow-down").css({'color': '#BA3126'});
         }
-        if (anchorLink === "ninthPage"){
+        if (anchorLink === "ninthPage") {
           $(".counter").text("9");
+        $(".arrow-down").css({'color': '#3285E7'});
+        }
+        if (anchorLink === "tenthPage"){
+          $(".counter").text("10");
           $(".magic").addClass("animated bounceInLeft");
           $(".trophy").addClass("animated bounceInUp");
           return $(".users").addClass("animated bounceInRight");
         }
 
-        if (anchorLink === "tenthPage") {
-          $(".counter").text("10");
-        
-        }
         if (anchorLink === "eleventhPage") {
           $(".counter").text("11");
+        
+        }
+        if (anchorLink === "twelfthPage") {
+          $(".counter").text("12");
           $('.nothing').fadeIn('slow').birdman({
                         speedup:false,
                         delay:0
@@ -86,9 +98,9 @@
           
           $('.author').fadeIn(8000);
          
-          $(".arrow-down").css({'color': '#3285E7','border':'1px solid #3285E7'});
+          $(".arrow-down").css({'color': '#3285E7'});
         }
-          if (anchorLink !== "eleventhPage"){
+          if (anchorLink !== "twelfthPage"){
              $('.nothing').fadeOut(100);
              $('.godard').fadeOut(100);
           $('.author').fadeOut(100);

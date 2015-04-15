@@ -413,7 +413,7 @@ html, body {
 
 .scroll-down {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   left: 50%;
   width: 200px;
   margin-left: -100px;
@@ -741,30 +741,31 @@ html, body {
     float: left;
     position: relative;
 }
+
 .fp-controlArrow {
     position: absolute;
     z-index: 4;
     top: 50%;
     cursor: pointer;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    margin-top: -38px;
-    -webkit-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    margin-top: -64px;
+    font-family: FontAwesome;
+  font-size: 24px;
+  color: #5e5e5e;
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    left: 20px;
 }
+ .fp-controlArrow.fp-prev:after {
+      content: "\f177 "; }
+
 .fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    right: 20px;
 }
+
+ .fp-controlArrow.fp-next:after {
+      content: "\f178"; }
+
+
 .fp-scrollable {
     overflow: scroll;
 }
@@ -790,38 +791,38 @@ html, body {
 #fullPage-nav.left {
     left: 17px;
 }
-.fullPage-slidesNav{
+.fp-slidesNav{
     position: absolute;
     z-index: 4;
     left: 50%;
     opacity: 1;
 }
-.fullPage-slidesNav.bottom {
+.fp-slidesNav.bottom {
     bottom: 17px;
 }
-.fullPage-slidesNav.top {
+.fp-slidesNav.top {
     top: 17px;
 }
 
 
 #fullPage-nav ul,
-.fullPage-slidesNav ul {
+.fp-slidesNav ul {
   margin: 0;
   padding: 0;
 }
 #fullPage-nav ul li,
-.fullPage-slidesNav ul li {
+.fp-slidesNav ul li {
     display: block;
     width: 14px;
     height: 13px;
     margin: 7px;
     position:relative;
 }
-.fullPage-slidesNav ul li {
+.fp-slidesNav ul li {
     display: inline-block;
 }
 #fullPage-nav ul li a,
-.fullPage-slidesNav ul li a {
+.fp-slidesNav ul li a {
     display: block;
     position: relative;
     z-index: 1;
@@ -831,16 +832,16 @@ html, body {
     text-decoration: none;
 }
 #fullPage-nav ul li a.active span,
-.fullPage-slidesNav ul li a.active span,
+.fp-slidesNav ul li a.active span,
 #fullPage-nav ul li:hover a.active span,
-.fullPage-slidesNav ul li:hover a.active span{
+.fp-slidesNav ul li:hover a.active span{
     height: 12px;
     width: 12px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
  }
 #fullPage-nav ul li a span,
-.fullPage-slidesNav ul li a span {
+.fp-slidesNav ul li a span {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -857,7 +858,7 @@ html, body {
     transition: all 0.1s ease-in-out;
 }
 #fullPage-nav ul li:hover a span,
-.fullPage-slidesNav ul li:hover a span{
+.fp-slidesNav ul li:hover a span{
     width: 10px;
     height: 10px;
     margin: -5px 0px 0px -5px;
@@ -932,6 +933,7 @@ body.no-scrollbar {
   color:#444;
   font-size: 40px;
   opacity:1;
+  display:none;
 }
 
 .typed-cursor{
@@ -1009,10 +1011,23 @@ hr{
  font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
 }
 
+/*
+
 #section0 h1{
   color:#ffa500;
   margin-top: 0;
 }
+*/
+h1#title{
+ font-size: 5em;
+ color:#444;
+ text-align: center;
+ margin:0 auto;
+ font-weight: 900;
+ margin-top: -10px;
+ font-family: Futura;
+}
+
 
 #section h1{
   color:#303030;
@@ -1117,6 +1132,7 @@ span.strike {
  color:#5e5e5e;
  width: 70px;
   height: 65px;
+  display:none;
  
   background-color: rgba(250,250,250, 1)
 }
@@ -1152,17 +1168,19 @@ i.icon-antenna{
 
 .arrow-down{
  font-size: 16px;
-  border:1px solid #5e5e5e;
+
   width:32px;
   height:32px;
-  border-radius: 50%;
-  color: #5e5e5e;
+
+  color: #fff;
    font-family: 'Montserrat', sans-serif;
    font-weight: 700;
    text-align: center;
   vertical-align: middle;
   line-height: 32px;
   padding-top: 1px;
+  z-index: 9999;
+  margin-left:-15px;
 }
 
 
@@ -1203,7 +1221,9 @@ i.icon-antenna{
   font-size:1.25em;
    display: none;
 }
-
+.centered{
+  text-align: center;
+}
 
 
 .scroll-down{
@@ -1222,7 +1242,7 @@ i.icon-antenna{
   position: fixed;
   right:0;
 
-  background-color: rgba(250,250,250, .75);
+  background-color: rgba(250,250,250, 1);
   z-index:999999;
  
 }
@@ -1270,7 +1290,6 @@ i.icon-antenna{
   margin:0 auto;
   text-align: center
  }
-
 
 
 .anime {
@@ -1411,6 +1430,10 @@ i.icon-antenna{
 }
 
 .section .btn{
-  text-align: center !important;
+  text-align: center;
+}
+
+.slide p{
+  text-align: center;
 }
 }
