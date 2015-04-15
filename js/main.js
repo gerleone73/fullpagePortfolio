@@ -2,18 +2,18 @@
   $(function() {
     $("#fullpage").fullpage({
       anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eigthPage","ninthPage", "tenthPage", "eleventhPage", "twelfthpage"],
-      slidesColor: ["#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
+      sectionsColor: ["#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
 
 
      
        slidesNavigation: true,
         slidesNavPosition: 'top',
 
-      scrollingSpeed: 1200,
+      scrollingSpeed: 1000,
       easing: 'easeInOutExpo',
       keyboardScrolling: true,
+      responsive:1000,
       touchSensitivity: 10,
-      continuousVertical: true,
       animateAnchor: true,
       afterLoad: function(anchorLink) {
         if (anchorLink === "twelfthPage") {
@@ -64,10 +64,12 @@
           $(".trophy").addClass("animated bounceInUp");
           return $(".users").addClass("animated bounceInRight");
         }
+
         if (anchorLink === "tenthPage") {
           $(".counter").text("10");
+        
         }
-         if (anchorLink === "eleventhPage") {
+        if (anchorLink === "eleventhPage") {
           $(".counter").text("11");
           $('.nothing').fadeIn('slow').birdman({
                         speedup:false,
@@ -80,11 +82,9 @@
            $('.godard').fadeIn().birdman({
                         speedup:true,
                         delay:300
-                      });
+                      });    
           
-          
-          
-          $('.author').fadeIn(9000);
+          $('.author').fadeIn(8000);
          
           $(".arrow-down").css({'color': '#3285E7','border':'1px solid #3285E7'});
         }
@@ -98,8 +98,7 @@
     });
 
 
-    
-
+  
 
 
 
