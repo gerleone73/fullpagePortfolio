@@ -5,7 +5,7 @@
 
     $("#fullpage").fullpage({
       anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eigthPage","ninthPage", "tenthPage", "eleventhPage", "twelfthPage"],
-      sectionsColor: ["#ebebeb","#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
+      sectionsColor: ["#fff","#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
 
 
      
@@ -23,7 +23,7 @@
 
         if (anchorLink === "firstPage") {
           $(".counter").text("1");
-           $(".arrow-down").css({'color': '#fff'});
+           $(".arrow-down").css({'color': '#333'});
 
         }
 
@@ -33,56 +33,69 @@
         }
         if (anchorLink === "secondPage") {
           $(".counter").text("2");
-
+           $(".headnav").css('background-color','#fff');
          
          
        
-        $(".arrow-down").css({'color': '#DD8F00'});
+        
         }
         if (anchorLink === "thirdPage") {
           $(".counter").text("3");
+
+          $(".headnav").css('background-color','#ebebeb');
         
 
-        $(".arrow-down").css({'color': '#333'});
+     
         }
           if (anchorLink === "fourthPage") {
           $(".counter").text("4");
-        $(".arrow-down").css({'color': '#FF7900'});
+          $(".headnav").css('background-color','#fff');
+        
         }
           if (anchorLink === "fifthPage") { 
           $(".counter").text("5");
-        $(".arrow-down").css({'color': '#FD301B'});
+       
+         $(".headnav").css('background-color','#ebebeb');
         }
         if (anchorLink === "sixthPage") {
           $(".counter").text("6");
-        $(".arrow-down").css({'color': '#3F0B3F'});
+        
+         $(".headnav").css('background-color','#fff');
         }
       
         if (anchorLink === "seventhPage") {
           $(".counter").text("7");
-        $(".arrow-down").css({'color': '#5e5e5e'});
+        
+         $(".headnav").css('background-color','#ebebeb');
         }
         if (anchorLink === "eigthPage") {
           $(".counter").text("8");
-        $(".arrow-down").css({'color': '#BA3126'});
+        
+         $(".headnav").css('background-color','#fff');
         }
         if (anchorLink === "ninthPage") {
           $(".counter").text("9");
-        $(".arrow-down").css({'color': '#3285E7'});
+      
+         $(".headnav").css('background-color','#ebebeb');
         }
         if (anchorLink === "tenthPage"){
           $(".counter").text("10");
+           $(".headnav").css('background-color','#fff');
           $(".magic").addClass("animated bounceInLeft");
           $(".trophy").addClass("animated bounceInUp");
           return $(".users").addClass("animated bounceInRight");
         }
 
+        
+
         if (anchorLink === "eleventhPage") {
           $(".counter").text("11");
+           $(".headnav").css('background-color','#ebebeb');
         
         }
         if (anchorLink === "twelfthPage") {
           $(".counter").text("12");
+           $(".headnav").css('background-color','#fff');
           $('.nothing').fadeIn('slow').birdman({
                         speedup:false,
                         delay:0
@@ -98,7 +111,7 @@
           
           $('.author').fadeIn(8000);
          
-          $(".arrow-down").css({'color': '#3285E7'});
+         
         }
           if (anchorLink !== "twelfthPage"){
              $('.nothing').fadeOut(100);

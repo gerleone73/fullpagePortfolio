@@ -498,22 +498,7 @@ body.fullPage-portfolio {
   float: left;
   position: relative; }
 
-.controlArrow {
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  margin-top: -64px;
-  font-family: FontAwesome;
-  font-size: 24px;
-  color: #5e5e5e; }
-  .controlArrow.prev {
-    left: 20px; }
-    .controlArrow.prev:after {
-      content: "\f177 "; }
-  .controlArrow.next {
-    right: 20px; }
-    .controlArrow.next:after {
-      content: "\f178"; }
+
 
 .scrollable {
   overflow: scroll; }
@@ -928,10 +913,10 @@ body.no-scrollbar {
   position: fixed;
   top:70px;
 
-  right:15px;
+  right:20px;
   z-index:99999999;
   color:#444;
-  font-size: 40px;
+  font-size: 30px;
   opacity:1;
   display:none;
 }
@@ -1019,15 +1004,21 @@ hr{
 }
 */
 h1#title{
- font-size: 5em;
+ font-size: 10em;
  color:#444;
  text-align: center;
  margin:0 auto;
  font-weight: 900;
- margin-top: -10px;
- font-family: Futura;
+ margin-top: -50px;
+font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
 }
 
+#section0 .arrow-down{
+  font-size: 40px;
+  margin-bottom: 25px;
+  color:#333;
+}
 
 #section h1{
   color:#303030;
@@ -1171,8 +1162,8 @@ i.icon-antenna{
 
   width:32px;
   height:32px;
-
-  color: #fff;
+ 
+  color: #000;
    font-family: 'Montserrat', sans-serif;
    font-weight: 700;
    text-align: center;
@@ -1253,16 +1244,18 @@ i.icon-antenna{
   position:fixed;
   bottom:57px;
   right:25px;
-  color:#444;
+  color:#333;
   background-color: #fff;
   z-index: 999;
   font-size: 16px;
-  border:1px solid #5e5e5e;
   width: 32px;
   height:32px;
   line-height: 32px;
-      font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    font-weight: 100;
+  border-top:2px solid #333;
+  border-right:2px solid #333;
+  border-left:2px solid #333;
+  font-family:'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+    font-weight: 300;
 }
 .total{
   text-align: center;
@@ -1270,18 +1263,18 @@ i.icon-antenna{
   position:fixed;
   bottom:25px;
   right:25px;
-  color:#444;
+ 
   background-color:#fff;
   z-index: 999;
+  color:#333;
   font-size: 16px;
-  border-bottom:1px solid #5e5e5e;
-  border-left:1px solid #5e5e5e;
-  border-right:1px solid #5e5e5e;
+  border:2px solid #333;
+  
   width:32px;
   height:32px;
   padding-top:1px;
   line-height: 32px;
-      font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-family:'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
    font-weight: 100;
  }
 
