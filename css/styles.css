@@ -1018,12 +1018,25 @@ color: #333;
 line-height:200px;
 text-align:center;
 vertical-align: middle;
-background-color:#F2F2F2; 
+background:#F2F2F2; 
 
 margin: 0 auto;
  margin-top:-50px;
  font-weight: 900;
 font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+transition: all .2s linear;
+
+}
+
+.titleBg:hover{
+  cursor: pointer;
+}
+
+.titleBg:active{
+font-size:98px;
+ box-shadow: 1px 0 2px 0 #eee;
+  transform: translateY(3px);
+
 }
 
 .typed-cursor{
