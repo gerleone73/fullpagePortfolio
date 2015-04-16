@@ -32,7 +32,7 @@
 
       
 
-        if(anchorLink!=='firstpage'){
+        if(anchorLink!=='firstPage'){
            $('.Gl').css('visibility','visible');
           $('.Gl').fadeIn();
           $('.menuTip').fadeIn();
