@@ -1247,6 +1247,8 @@ i.icon-antenna{
   background-color: #DD8F00;
 }
 
+
+
 .arrow-down{
  font-size: 16px;
 
@@ -1260,8 +1262,9 @@ i.icon-antenna{
   vertical-align: middle;
   line-height: 32px;
   padding-top: 1px;
-  z-index: 9999;
+  z-index: 999;
   margin-left:-15px;
+
 }
 
 
@@ -1310,6 +1313,7 @@ i.icon-antenna{
 .scroll-down{
   margin: 0;
   padding-bottom: 5px;
+  z-index: 999;
 }
 
 
