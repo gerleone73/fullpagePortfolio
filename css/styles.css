@@ -99,6 +99,16 @@ a {
   a:hover {
     color: #666666;
     text-decoration: none; }
+    a:focus{
+      outline: none;
+border: none;
+text-decoration: none;
+    }
+    a:visited{
+         outline: none;
+border: none;
+text-decoration: none;
+    }
 
 blockquote {
   border-color: #dddddd; }
@@ -1004,6 +1014,8 @@ hr{
 }
 */
 
+
+
 .titleBg{
 box-shadow:2px 0 2px 0 #eee, 0 3px 0 3px #ccc, 0 3px 0 3px #444;
 -webkit-border-radius:3px;
@@ -1019,6 +1031,7 @@ line-height:200px;
 text-align:center;
 vertical-align: middle;
 background:#F2F2F2; 
+text-decoration: none;
 
 margin: 0 auto;
  margin-top:-50px;
@@ -1037,6 +1050,11 @@ font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGo
   text-decoration: none;
 }
 
+.titlebg:focus{
+  outline: none;
+border: none;
+}
+
 .titleBg:active{
 font-size:98px;
  box-shadow: 1px 0 2px 0 #eee;
@@ -1045,7 +1063,7 @@ font-size:98px;
   -o-transform: translateY(3px);
    -ms-transform: translateY(3px);
     transform: translateY(3px);
-
+    text-decoration: none;
 }
 
 .typed-cursor{
