@@ -24,10 +24,16 @@
         if (anchorLink === "firstPage") {
           $(".counter").text("1");
            $(".arrow-down").css({'color': '#333'});
+           $(".headnav").css('background-color','#F2F2F2');
+           $('.Gl').css('visibility','hidden');
+           $('.Gl').fadeOut();
 
         }
 
+      
+
         if(anchorLink!=='firstpage'){
+           $('.Gl').css('visibility','visible');
           $('.Gl').fadeIn();
           $('.menuTip').fadeIn();
         }

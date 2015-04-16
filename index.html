@@ -50,7 +50,7 @@
 
     <div id="fullpage">
 
-    <div class="section active"  id="section0">
+    <div class="section active"  id="section0" style="background-image: url('images/compic.jpg'); background-size: cover;">
 
     <!--style="background-image: url('images/sea.jpg'); background-size: cover;-->
 
@@ -65,10 +65,11 @@
 
 
 
-
-
-                <h1 id="title">GL</h1>
-                
+              <div class="titleBg">GL
+              </div> 
+              
+              <div class="titleBgSub centered"></div>
+            
                 
 
                
@@ -603,16 +604,16 @@
 
    <script>
     $(function(){
-        $(".typed").typed({
-            strings: ["Gerry Laonard"],
+        $(".titleBgSub").typed({
+            strings: ["Developing Design"],
             // typing speed
-            typeSpeed: 0,
+            typeSpeed: 200,
             // time before typing starts
-            startDelay: 500,
+            startDelay: 100,
             // backspacing speed
             backSpeed: 0,
             // time before backspacing
-            backDelay: 500,
+            backDelay: 200,
             // loop
             loop: false,
             // false = infinite
