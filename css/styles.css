@@ -1030,6 +1030,7 @@ transition: all .2s linear;
 
 .titleBg:hover{
   cursor: pointer;
+  text-decoration: none;
 }
 
 .titleBg:active{
