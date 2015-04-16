@@ -1024,7 +1024,11 @@ margin: 0 auto;
  margin-top:-50px;
  font-weight: 900;
 font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-transition: all .2s linear;
+ -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transiton:all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 
 }
 
@@ -1036,7 +1040,11 @@ transition: all .2s linear;
 .titleBg:active{
 font-size:98px;
  box-shadow: 1px 0 2px 0 #eee;
-  transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  -moz-transform: translateY(3px);
+  -o-transform: translateY(3px);
+   -ms-transform: translateY(3px);
+    transform: translateY(3px);
 
 }
 
