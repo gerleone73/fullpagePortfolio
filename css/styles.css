@@ -529,9 +529,9 @@ body.fullPage-portfolio {
   left: 50%;
   opacity: 1; }
   .fullPage-slidesNav.bottom {
-    bottom: 17px; }
+    bottom: 22px; }
   .fullPage-slidesNav.top {
-    top: 17px; }
+    top: 22px; }
 
 #fullPage-nav ul, .fullPage-slidesNav ul {
   margin: 0;
@@ -783,7 +783,7 @@ html, body {
     opacity: 1;
 }
 .fp-slidesNav.bottom {
-    bottom: 17px;
+    bottom: 40px;
 }
 .fp-slidesNav.top {
     top: 17px;

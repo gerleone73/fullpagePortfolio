@@ -10,7 +10,7 @@
 
      
        slidesNavigation: true,
-        slidesNavPosition: 'top',
+        slidesNavPosition: 'bottom',
 
       scrollingSpeed: 1000,
       easing: 'easeInOutExpo',
