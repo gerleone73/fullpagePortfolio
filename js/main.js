@@ -4,7 +4,7 @@
 
 
     $("#fullpage").fullpage({
-      anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eigthPage","ninthPage", "tenthPage", "eleventhPage", "twelfthPage"],
+      anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eighthPage","ninthPage", "tenthPage", "eleventhPage", "twelfthPage"],
       sectionsColor: ["#fff","#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff"],
 
 
@@ -74,7 +74,7 @@
         
          $(".headnav").css('background-color','#ebebeb');
         }
-        if (anchorLink === "eigthPage") {
+        if (anchorLink === "eighthPage") {
           $(".counter").text("8");
         
          $(".headnav").css('background-color','#fff');
