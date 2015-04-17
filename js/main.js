@@ -1,22 +1,7 @@
 (function() {
   $(function() {
 
-     $("#element").introLoader({
-
-   animation: {
-        name: 'counterLoader',
-        options: {
-            exitFx:'fadeOut',
-            ease: "easeOutSine",
-            style: 'dark',
-            delayBefore: 0, //delay time in milliseconds
-            animationTime: 600,
-            exitTime: 600
-        }
-    },
-
-    spinJs: {}
-  });
+ 
 
 
 
