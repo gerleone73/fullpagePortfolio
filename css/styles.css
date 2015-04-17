@@ -1024,7 +1024,10 @@ hr{
 
 
 .titleBg{
-box-shadow:4px 0 4px 0 #eee, 0 5px 0 5px #ccc, 0 5px 0 5px #444;
+
+   
+box-shadow:6px 0 6px 0 #eee, 0 8px 0 8px #ccc, 0 8px 0 8px #444;
+
 -webkit-border-radius:3px;
 -moz-border-radius:3px;
 border-radius:3px;
@@ -1055,6 +1058,8 @@ font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGo
 .titleBg:hover{
   cursor: pointer;
   text-decoration: none;
+   -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
 }
 
 .titlebg:focus{
