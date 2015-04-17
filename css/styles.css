@@ -1,4 +1,4 @@
-*----------------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------------------- */
 /*  Fonts */
 /*----------------------------------------------------------------------------------- */
 /*@font-face {
@@ -1091,15 +1091,15 @@ font-size:98px;
 .titleBgSub{
   
   color:#444;
-  font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+ font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
   height: 12px;
-  letter-spacing: 0.05em;
-  font-size: 12px;
-  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: 13px;
+  
   margin-top: -40px;
   padding: 0 0 0 4px;
   
-  font-weight: lighter;
+  font-weight: 600;
   text-transform: uppercase;
   z-index: 99999;
 }
