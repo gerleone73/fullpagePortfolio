@@ -1247,7 +1247,7 @@ span.strike {
   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
  font-weight: 900;
  letter-spacing:;
- color:#323232;
+ color:#333;
  width: 70px;
   height: 65px;
   visibility: hidden;
@@ -1255,22 +1255,23 @@ span.strike {
 
 }
 .return:hover{
-  color:rgba(50,50,50, .9);
+  color:rgba(50,50,50,.5);
   
 }
 
 .return{
-  font-size:86px;
+    font-size:80px;
   position: fixed;
-  top: -10px;
-  color:rgba(50,50,50, .2);
-    left:17px;
+  top: -1px;
+  color:rgba(50,50,50, 1);
+    left:15px;
  font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
  -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
   -ms-transiton:all .3s ease;
   transition: all .3s ease;
+  font-weight: 100;
 }
 
 
@@ -1502,7 +1503,7 @@ i.icon-antenna{
       -webkit-transition-delay: 0.2s;
       width: 40px;
       height: 4px;
-      background-color: #5e5e5e;
+      background-color: #333;
       display: block; }
       #menu .menu-bars span:before, #menu .menu-bars span:after {
         position: absolute;
@@ -1510,7 +1511,7 @@ i.icon-antenna{
       #menu .menu-bars span:before, #menu .menu-bars span:after {
         width: 40px;
         height: 4px;
-        background-color: #5e5e5e;
+        background-color: #333;
         display: block; }
       #menu .menu-bars span:before {
         margin-top: -12px;
