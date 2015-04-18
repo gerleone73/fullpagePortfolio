@@ -1132,14 +1132,10 @@ font-size:98px;
 }
 
 #section10{
- background-image: url('images/compic.jpg') no-repeat center center fixed;
- -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-   top: 0; 
-  left: 0; 
-
+ background-image: url('../images/compic.jpg');
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
 }
 
 #section0 .arrow-down{
