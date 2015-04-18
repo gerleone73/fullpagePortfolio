@@ -1131,10 +1131,22 @@ font-size:98px;
   z-index: 99999;
 }
 
+#section10{
+ background-image: url('images/compic.jpg') no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   top: 0; 
+  left: 0; 
+
+}
+
 #section0 .arrow-down{
   font-size: 40px;
   margin-bottom: 25px;
   color:#333;
+
 }
 
 #section1 h1{
