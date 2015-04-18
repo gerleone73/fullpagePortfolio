@@ -1131,11 +1131,47 @@ font-size:98px;
   z-index: 99999;
 }
 
-#section10{
- background-image: url('../images/compic.jpg');
+#section11{
+ background-image: url('../images/sealight.jpg');
 background-repeat: no-repeat;
 background-position: center center;
-background-attachment: fixed;
+background-size: cover;
+
+}
+.pattern{
+    background-image: url('../images/sea2.png');
+    background-position: cover;
+    width: 100%;
+    height: 100%;
+
+    overflow-x:hidden;
+    
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  -webkit-animation: pulse 9s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    /*background-color: rgba(0,0,255,0.5);*/
+    opacity: .9;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0.7;
+  }
 }
 
 #section0 .arrow-down{
@@ -1344,6 +1380,8 @@ i.icon-antenna{
   color:#444;
   text-justify: inter-word;
    text-transform: uppercase;
+   z-index:999;
+
 }
 
 .justify{
@@ -1351,11 +1389,13 @@ i.icon-antenna{
    text-justify: inter-word;
   line-height: 1.6em;
 
+
 }
 
 .col-md-4.centered{
   float: none !important;
   margin: 0 auto;
+
 }
 
 .nothing, .godard{
