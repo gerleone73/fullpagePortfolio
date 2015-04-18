@@ -102,11 +102,13 @@ a {
     a:focus{
       outline: none;
 border: none;
+color: #666666;
 text-decoration: none;
     }
     a:visited{
          outline: none;
 border: none;
+color:#666666
 text-decoration: none;
     }
 
@@ -747,7 +749,7 @@ html, body {
 .fp-controlArrow {
     position: absolute;
     z-index: 4;
-    top: 50%;
+    top: 90%;
     cursor: pointer;
     margin-top: -64px;
     font-family: FontAwesome;
@@ -759,14 +761,14 @@ html, body {
 }
 
 .fp-controlArrow.fp-prev {
-    left: 20px;
+    left: 27px;
 }
 /*
  .fp-controlArrow.fp-prev:after {
       content: "\f177 "; }
 */
 .fp-controlArrow.fp-next {
-    right: 20px;
+    right: 27px;
 }
 /*
  .fp-controlArrow.fp-next:after {
@@ -782,9 +784,10 @@ html, body {
 }
 
 .clickTip{
-  font-size: 14px;
+  font-size: 12px;
   vertical-align: middle;
 }
+
 
 
 /*TEXT RUN */
