@@ -1,6 +1,16 @@
 (function() {
   $(function() {
 
+     var obj2 = document.createElement("audio");
+        obj2.src="leb wohl.mp3";
+        obj2.volume=0.08;
+        obj2.autoPlay=false;
+        obj2.preLoad=true;       
+ 
+        
+            
+       
+
  
 
 
@@ -152,6 +162,7 @@
         
 
         if (anchorLink === "twelfthPage") {
+          obj2.play();
           $(".counter").text("12");
            $(".headnav").css('background-color','#fff');
           $('.nothing').fadeIn('slow').birdman({
@@ -172,6 +183,7 @@
         }
          
           if (anchorLink !== "twelfthPage"){
+            obj2.load();
              $('.nothing').fadeOut(100);
              $('.godard').fadeOut(100);
           $('.author').fadeOut(100);
