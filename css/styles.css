@@ -751,22 +751,27 @@ html, body {
     cursor: pointer;
     margin-top: -64px;
     font-family: FontAwesome;
-  font-size: 24px;
-  color: #5e5e5e;
+  font-size: 36px;
+  color: #333;
 }
+.fp-controlArrow:hover{
+  color:#5e5e5e;
+}
+
 .fp-controlArrow.fp-prev {
     left: 20px;
 }
+/*
  .fp-controlArrow.fp-prev:after {
       content: "\f177 "; }
-
+*/
 .fp-controlArrow.fp-next {
     right: 20px;
 }
-
+/*
  .fp-controlArrow.fp-next:after {
       content: "\f178"; }
-
+*/
 
 .fp-scrollable {
     overflow: scroll;
@@ -774,6 +779,11 @@ html, body {
 .fp-notransition {
     -webkit-transition: none !important;
     transition: none !important;
+}
+
+.clickTip{
+  font-size: 14px;
+  vertical-align: middle;
 }
 
 
@@ -800,7 +810,10 @@ html, body {
     opacity: 1;
 }
 .fp-slidesNav.bottom {
-    bottom: 40px;
+    bottom: 50px;
+    border: 1px solid #333;
+    padding:2px 5px;
+    vertical-align: middle;
 }
 .fp-slidesNav.top {
     top: 17px;
@@ -850,7 +863,7 @@ html, body {
     height: 4px;
     width: 4px;
     border: 0;
-    background: #5e5e5e;
+    background: #333;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -1058,6 +1071,7 @@ font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGo
 .titleBg:hover{
   cursor: pointer;
   text-decoration: none;
+ box-shadow:8px 0 8px 0 #eee, 0 10px 0 10px #ccc, 0 10px 0 10px #444;
 }
 
 .titlebg:focus{
@@ -1237,6 +1251,24 @@ span.strike {
  z-index: 999;
 
 }
+.return:hover{
+  color:rgba(50,50,50, .9);
+  
+}
+
+.return{
+  font-size:86px;
+  position: fixed;
+  top: -10px;
+  color:rgba(50,50,50, .2);
+    left:17px;
+ font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+ -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transiton:all .3s ease;
+  transition: all .3s ease;
+}
 
 
 i.icon-antenna{
@@ -1270,7 +1302,7 @@ i.icon-antenna{
 
 
 .arrow-down{
- font-size: 16px;
+ font-size: 32px;
 
   width:32px;
   height:32px;
@@ -1284,6 +1316,10 @@ i.icon-antenna{
   padding-top: 1px;
   z-index: 999;
   margin-left:-15px;
+
+}
+
+.arrow-down a:hover{
 
 }
 
