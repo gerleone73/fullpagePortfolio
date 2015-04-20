@@ -1029,13 +1029,12 @@ hr{
  font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
 }
 
-/*
 
-#section0 h1{
-  color:#ffa500;
-  margin-top: 0;
+
+.fullPage-portfolio {
+  visibility: hidden;
 }
-*/
+
 
 
 
@@ -1069,7 +1068,7 @@ font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGo
   -o-transition: all .2s ease-in-out;
   -ms-transiton:all .2s ease-in-out;
   transition: all .2s ease-in-out;
-display:none;
+
 }
 
 .titleBg:hover{
