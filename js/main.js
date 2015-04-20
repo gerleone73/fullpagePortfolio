@@ -13,9 +13,9 @@ $(window).bind("load", function(){
 
 
     $('.section0').css('visibility','visible');
-    $('.headnav').delay(6000 ).fadeIn(600);
-     $('.total').delay(6000).fadeIn(600);
-      $('.counter').delay(6000).fadeIn(600);
+    $('.headnav').delay(5000 ).fadeIn(1000);
+     $('.total').delay(5000).fadeIn(1000);
+      $('.counter').delay(5000).fadeIn(1000);
 
 
  
