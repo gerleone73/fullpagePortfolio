@@ -1069,7 +1069,7 @@ font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGo
   -o-transition: all .2s ease-in-out;
   -ms-transiton:all .2s ease-in-out;
   transition: all .2s ease-in-out;
-
+display:none;
 }
 
 .titleBg:hover{
