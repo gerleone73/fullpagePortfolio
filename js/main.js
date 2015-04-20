@@ -1,10 +1,35 @@
 (function() {
   $(function() {
 
+$('body').on({
+    'mousewheel': function(e) {
+        if (e.target.id == 'el') return;
+        e.preventDefault();
+        e.stopPropagation();
+    }
+})
+
     // Fakes the loading setting a timeout
     setTimeout(function() {
         $('body').addClass('loaded');
     }, 6000);
+
+
+$('.titleBg').on('click', function(){
+  $('body').unbind("mousewheel");
+});
+
+$('.arrow-down1').on('click', function(){
+  $('body').unbind("mousewheel");
+});
+
+$('#menu').on('click', function(){
+  $('body').unbind("mousewheel");
+});
+
+
+
+
 
 
      var obj2 = document.createElement("audio");
@@ -30,6 +55,9 @@
     $('#neu').css('visibility','hidden');
 
      }); 
+
+
+
  
 
 
@@ -48,6 +76,7 @@
       keyboardScrolling: true,
       responsive:1000,
       touchSensitivity: 10,
+
       animateAnchor: true,
       afterLoad: function(anchorLink) {
 

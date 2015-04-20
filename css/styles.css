@@ -1592,6 +1592,11 @@ i.icon-antenna{
  
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 .counter{
   text-align: center;
   vertical-align: middle;
