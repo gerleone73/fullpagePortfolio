@@ -33,7 +33,7 @@ $(window).bind("load", function(){
     });
  
 
-    $(function(){
+    
 
         $(".titleBgSub").typed({
             strings: ["Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press this key"],
@@ -66,7 +66,7 @@ $(window).bind("load", function(){
             // callback for reset
             resetCallback: function() {}
         });
-    });
+  
 });
 
 $('.loading').fadeOut(6600);
