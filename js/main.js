@@ -9,25 +9,11 @@ $('body').on({
     }
 })
 
-    // Fakes the loading setting a timeout
+    // Fakes the loading setting a timeout & unbind mouswheel to allow scroll
     setTimeout(function() {
         $('body').addClass('loaded');
+        $('body').unbind("mousewheel");
     }, 6000);
-
-
-$('.titleBg').on('click', function(){
-  $('body').unbind("mousewheel");
-});
-
-$('.arrow-down1').on('click', function(){
-  $('body').unbind("mousewheel");
-});
-
-$('#menu').on('click', function(){
-  $('body').unbind("mousewheel");
-});
-
-
 
 
 
