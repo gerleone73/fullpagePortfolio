@@ -7,7 +7,67 @@ $('body').on({
         e.preventDefault();
         e.stopPropagation();
     }
-})
+});
+
+$(window).bind("load", function(){
+
+
+    $('.section0').css('visibility','visible');
+    $('.headnav').delay(6000 ).fadeIn(600);
+     $('.total').delay(6000).fadeIn(600);
+      $('.counter').delay(6000).fadeIn(600);
+
+
+ 
+    $(document).ready(function() {
+        var obj = document.createElement("audio");
+        obj.src="pressing-spacebar.wav";
+        obj.volume=0.05;
+        obj.autoPlay=false;
+        obj.preLoad=true;       
+ 
+        $(".playSound").click(function() {
+            obj.play();
+        });
+ 
+    });
+ 
+
+    $(function(){
+
+        $(".titleBgSub").typed({
+            strings: ["Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press this key"],
+            // typing speed
+            typeSpeed: 100,
+            // time before typing starts
+            startDelay: 6300,
+            // backspacing speed
+            backSpeed: 0,
+            // time before backspacing
+            backDelay: 800,
+            // loop
+            loop: false,
+            // false = infinite
+            loopCount: false,
+            // show cursor
+            showCursor: false,
+            // character for cursor
+            cursorChar: "|",
+            // attribute to type (null == text)
+            attr: null,
+            // either html or text
+            contentType: 'html',
+            // call when done callback function
+            callback: function() {},
+            // starting callback function before each string
+            preStringTyped: function() {},
+            //callback for every typed string
+            onStringTyped: function() {},
+            // callback for reset
+            resetCallback: function() {}
+        });
+    });
+});
 
 $('.loading').fadeOut(6600);
 
