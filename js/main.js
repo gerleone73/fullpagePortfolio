@@ -1,6 +1,12 @@
 (function() {
   $(function() {
 
+    // Fakes the loading setting a timeout
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 3000);
+    
+
      var obj2 = document.createElement("audio");
         obj2.src="leb wohl edit.mp3";
         obj2.volume=0.05;
