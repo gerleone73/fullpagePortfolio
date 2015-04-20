@@ -2,15 +2,24 @@
   $(function() {
 
      var obj2 = document.createElement("audio");
-        obj2.src="leb wohl.mp3";
-        obj2.volume=0.08;
+        obj2.src="leb wohl edit.mp3";
+        obj2.volume=0.05;
         obj2.autoPlay=false;
         obj2.preLoad=true;       
  
         
             
-       
+     $('.stop').on( "click", function() {
+      obj2.load();
+     }); 
 
+     $('.play').on( "click", function() {
+       obj2.play();
+     }); 
+
+     $('.fa-music').on("click",function() {
+      $('#neu').css('visibility','visible');
+     }); 
  
 
 
@@ -178,7 +187,8 @@
                         delay:300
                       });    
           
-          $('.author').fadeIn(8000);
+          $('.author').fadeIn(6000);
+          $('.music').fadeIn(1000);
           $('#nothing').addClass('nav-live');
         }
          
@@ -187,6 +197,8 @@
              $('.nothing').fadeOut(100);
              $('.godard').fadeOut(100);
           $('.author').fadeOut(100);
+          $('.music').fadeOut(100);
+          $('#neu').css('visibility','hidden');
           $('.birdman').fadeOut(100);
           $('#nothing').removeClass('nav-live');
           }

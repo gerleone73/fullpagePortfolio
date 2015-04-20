@@ -1039,6 +1039,7 @@ hr{
 
 
 
+
 .titleBg{
 
    
@@ -1177,8 +1178,39 @@ background-size: cover;
 #section0 .arrow-down{
   font-size: 40px;
   margin-bottom: 25px;
-  color:#333;
+  
 
+}
+
+.flash{
+
+  -moz-animation: flash 3s ease-in-out;
+  -moz-animation-iteration-count: infinite;
+
+  -webkit-animation: flash 3s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+
+  -ms-animation: flash 3s ease-in-out;
+  -ms-animation-iteration-count: infinite;
+
+}
+
+@-webkit-keyframes flash {
+    0% { color:#fff;}
+    50% { color:#333;}        
+    100% {color:#fff;}
+}
+
+@-moz-keyframes flash {
+     0% { color:#fff;}
+    50% { color:#333;}        
+    100% {color:#fff;}
+}
+
+@-ms-keyframes flash {
+    0% { color:#fff;}
+    50% { color:#333;}        
+    100% {color:#fff;}
 }
 
 #section1 h1{
@@ -1349,7 +1381,7 @@ i.icon-antenna{
 
 
 
-.arrow-down{
+.arrow-down, .arrow-down1{
  font-size: 32px;
 
   width:32px;
@@ -1403,19 +1435,42 @@ i.icon-antenna{
   font-size:1.5em;
   font-weight: 100;
   text-transform: uppercase;
- font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
  display: none;
 }
 
 
 .author{
-  text-align: right!important;
+  
   font-size:1.25em;
    display: none;
+   text-transform: uppercase;
+   font-weight: 300;
 }
+
+.music{
+  font-size: 1.5em;
+  display: none;
+  text-align: center;
+}
+
+.fa-music, .play, .stop{
+  margin:0 1em;
+  font-size: 1em;
+  cursor:pointer;
+}
+
+#neu{
+  visibility: hidden;
+  color:#333;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
 .centered{
   text-align: center;
 }
+
 
 
 .scroll-down{
