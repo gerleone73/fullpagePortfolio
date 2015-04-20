@@ -1499,9 +1499,11 @@ i.icon-antenna{
 
 }
 
+.jarmusch{
+  padding-top: 3em;
+}
 
-
-.jarmusch .lettering {
+.lettering {
   font-size:1.1em;
   font-weight: 100;
     font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -1535,32 +1537,34 @@ i.icon-antenna{
 }
 
 
-.author{
-  
+.section p.author{
+  text-align: center;
   font-size:1.25em;
    display: none;
    text-transform: uppercase;
-   font-weight: 300;
+   font-weight: 600;
 }
 
-.music{
+.section p.music{
   font-size: 1.5em;
   display: none;
   text-align: center;
 }
 
-.fa-music, .play, .stop{
-  margin:0 1em;
+.section .fa-music, .section .play, .section .stop{
+  margin:0 1em 0 1em;
   font-size: 1em;
   cursor:pointer;
+  text-align: center;
 }
 
-#neu{
+.section p#neu{
   visibility: hidden;
   color:#333;
   font-size: 1.25em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 600;
+  text-align: center;
 }
 
 .centered{
@@ -1592,10 +1596,6 @@ i.icon-antenna{
  
 }
 
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
 
 .counter{
   text-align: center;
@@ -1742,6 +1742,14 @@ i.icon-antenna{
       margin-top: 0;
       -webkit-transform: rotate(-45deg);
       -webkit-transition-delay: 0, 0.2s; }
+
+
+@media screen and (max-width: 1200px) {
+
+.lettering {
+  font-size:14px;
+}
+
 
 @media screen and (max-width: 1000px) {
 
