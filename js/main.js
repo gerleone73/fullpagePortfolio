@@ -40,7 +40,7 @@ $(window).bind("load", function(){
             // typing speed
             typeSpeed: 100,
             // time before typing starts
-            startDelay: 6300,
+            startDelay: 6000,
             // backspacing speed
             backSpeed: 0,
             // time before backspacing
