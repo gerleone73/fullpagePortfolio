@@ -24,7 +24,11 @@
      }); 
 
      $('.fa-music').on("click",function() {
-      $('#neu').css('visibility','visible');
+      if ( $('#neu').css('visibility') == 'hidden' )
+    $('#neu').css('visibility','visible');
+  else
+    $('#neu').css('visibility','hidden');
+
      }); 
  
 

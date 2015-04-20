@@ -32,7 +32,7 @@
   </head>
   <body>
   
-  
+
 
 <div id="loader-wrapper">
   <div id="loader"></div>
@@ -658,7 +658,10 @@
 $(window).bind("load", function(){
 
 
-    $('.fullPage-portfolio').css('visibility','visible');
+    $('.section0').css('visibility','visible');
+    $('.headnav').delay(6000 ).fadeIn(600);
+     $('.total').delay(6000).fadeIn(600);
+      $('.counter').delay(6000).fadeIn(600);
 
 
  
@@ -677,12 +680,13 @@ $(window).bind("load", function(){
  
 
     $(function(){
+
         $(".titleBgSub").typed({
             strings: ["Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press this key"],
             // typing speed
             typeSpeed: 100,
             // time before typing starts
-            startDelay: 1800,
+            startDelay: 6600,
             // backspacing speed
             backSpeed: 0,
             // time before backspacing

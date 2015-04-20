@@ -1031,7 +1031,7 @@ hr{
 
 
 
-.fullPage-portfolio {
+.section0 {
   visibility: hidden;
 }
 
@@ -1588,6 +1588,7 @@ i.icon-antenna{
 
   background-color: #F2F2F2;
   z-index:999;
+  display:none;
  
 }
 
@@ -1610,6 +1611,8 @@ i.icon-antenna{
   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 
     font-weight: 300;
+  display:none;
+
 }
 .total{
   text-align: center;
@@ -1631,6 +1634,7 @@ i.icon-antenna{
     font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 
    font-weight: 100;
+   display:none;
  }
 
 
