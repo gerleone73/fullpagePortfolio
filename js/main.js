@@ -9,9 +9,12 @@ $('body').on({
     }
 })
 
+$('.loading').fadeOut(6600);
+
     // Fakes the loading setting a timeout & unbind mouswheel to allow scroll
     setTimeout(function() {
         $('body').addClass('loaded');
+
         $('body').unbind("mousewheel");
     }, 6000);
 
