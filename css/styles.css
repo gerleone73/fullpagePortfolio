@@ -1538,12 +1538,10 @@ i.icon-antenna{
   padding-top: 1px;
   z-index: 999;
   margin-left:-15px;
-
+ display:none;
 }
 
-.arrow-down1{
-  display:none;
-}
+
 
 .arrow-down a:hover{
 
