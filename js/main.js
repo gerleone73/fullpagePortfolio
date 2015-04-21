@@ -19,9 +19,19 @@ $(window).bind("load", function(){
       $('.arrow-down1').delay(5000).fadeIn('fast');
       $('.arrow-down').delay(5000).fadeIn('fast');
 
-
  
-    $(document).ready(function() {
+    });
+ 
+
+    // Fakes the loading setting a timeout & unbind mouswheel to allow scroll
+    setTimeout(function() {
+        $('body').addClass('loaded');
+        $('.loading').fadeOut();
+
+        $('body').unbind("mousewheel");
+    }, 5000);
+
+       $(document).ready(function() {
         var obj = document.createElement("audio");
         obj.src="pressing-spacebar.wav";
         obj.volume=0.05;
@@ -31,10 +41,6 @@ $(window).bind("load", function(){
         $(".playSound").click(function() {
             obj.play();
         });
- 
-    });
- 
-
     
 
         $(".titleBgSub").typed({
@@ -73,13 +79,6 @@ $(window).bind("load", function(){
 
 
 
-    // Fakes the loading setting a timeout & unbind mouswheel to allow scroll
-    setTimeout(function() {
-        $('body').addClass('loaded');
-        $('.loading').fadeOut();
-
-        $('body').unbind("mousewheel");
-    }, 5000);
 
 
 
