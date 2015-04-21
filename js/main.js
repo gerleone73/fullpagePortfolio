@@ -44,7 +44,7 @@ $(window).bind("load", function(){
             // backspacing speed
             backSpeed: 0,
             // time before backspacing
-            backDelay: 800,
+            backDelay: 1000,
             // loop
             loop: false,
             // false = infinite
@@ -69,11 +69,12 @@ $(window).bind("load", function(){
   
 });
 
-$('.loading').fadeOut(6600);
+
 
     // Fakes the loading setting a timeout & unbind mouswheel to allow scroll
     setTimeout(function() {
         $('body').addClass('loaded');
+        $('.loading').fadeOut();
 
         $('body').unbind("mousewheel");
     }, 6000);

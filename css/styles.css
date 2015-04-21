@@ -637,19 +637,27 @@ body.fullPage-portfolio {
       .overlay ul li a {
         font-weight: 300;
         display: block;
-        color: #000;
+        color: #333;
         text-transform: uppercase;
         -webkit-transition: all .5s;
         transition: all .5s;
         /*border-bottom: 1px solid #5e5e5e; */
       }
         .overlay ul li a:hover, .overlay ul li a:focus {
-          color:#818181;
+          color:#333;
           font-weight: 300;
 
         
            -webkit-transition: all .5s;
         transition: all .5s; }
+
+      .overlay ul li a:hover:before{
+        content:  "\002D";
+      }
+
+      .overlay ul li a:hover:after{
+        content:  "\002D";
+      }
 
 .overlay {
   opacity: 0;
@@ -1186,6 +1194,10 @@ font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGo
 
 }
 
+a.playSound:hover, a.playSound:focus, a.playSound:visited{
+  color: #333;
+}
+
 .titleBg:hover{
   cursor: pointer;
   text-decoration: none;
@@ -1297,16 +1309,16 @@ background-size: cover;
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
-    opacity: .4;
+    opacity: 1;
   }
   50% {
-    -webkit-transform: scale(1);
+    -webkit-transform: scale(1.1);
     /*background-color: rgba(0,0,255,0.5);*/
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(1);
-    opacity: .4;
+    opacity: 1;
   }
 }
 
