@@ -646,18 +646,10 @@ body.fullPage-portfolio {
         .overlay ul li a:hover, .overlay ul li a:focus {
           color:#333;
           font-weight: 300;
+          -webkit-transform: scale(1.1);
+        }
+          
 
-        
-           -webkit-transition: all .5s;
-        transition: all .5s; }
-
-      .overlay ul li a:hover:before{
-        content:  "\002D";
-      }
-
-      .overlay ul li a:hover:after{
-        content:  "\002D";
-      }
 
 .overlay {
   opacity: 0;
@@ -1301,6 +1293,8 @@ background-size: cover;
   }
 }
 
+
+
 .pulse-link{
   -webkit-animation-name: pulse;
   -webkit-animation: pulse 2s infinite;
@@ -1312,7 +1306,7 @@ background-size: cover;
     opacity: 1;
   }
   50% {
-    -webkit-transform: scale(1.1);
+    -webkit-transform: scale(.9);
     /*background-color: rgba(0,0,255,0.5);*/
     opacity: 1;
   }
