@@ -16,7 +16,7 @@ $(window).bind("load", function(){
     $('.headnav').delay(5000 ).fadeIn();
      $('.total').delay(5000).fadeIn();
       $('.counter').delay(5000).fadeIn();
-      $('.arrow-down1').delay(5000).fadeIn();
+      $('.arrow-down1').delay(6000).fadeIn();
 
 
  
