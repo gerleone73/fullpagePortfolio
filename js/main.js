@@ -13,9 +13,10 @@ $(window).bind("load", function(){
 
 
     $('.section0').css('visibility','visible');
-    $('.headnav').delay(5000 ).fadeIn(1000);
-     $('.total').delay(5000).fadeIn(1000);
-      $('.counter').delay(5000).fadeIn(1000);
+    $('.headnav').delay(5000 ).fadeIn();
+     $('.total').delay(5000).fadeIn();
+      $('.counter').delay(5000).fadeIn();
+      $('.arrow-down1').delay(5000).fadeIn();
 
 
  
