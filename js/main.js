@@ -13,10 +13,10 @@ $(window).bind("load", function(){
 
 
     $('.section0').css('visibility','visible');
-    $('.headnav').delay(5000 ).fadeIn();
-     $('.total').delay(5000).fadeIn();
-      $('.counter').delay(5000).fadeIn();
-      $('.arrow-down1').delay(6000).fadeIn();
+    $('.headnav').delay(5000 ).fadeIn('fast');
+     $('.total').delay(5000).fadeIn('fast');
+      $('.counter').delay(5000).fadeIn('fast');
+      $('.arrow-down1').delay(5000).fadeIn('fast');
 
 
  
@@ -41,7 +41,7 @@ $(window).bind("load", function(){
             // typing speed
             typeSpeed: 100,
             // time before typing starts
-            startDelay: 6000,
+            startDelay: 5000,
             // backspacing speed
             backSpeed: 0,
             // time before backspacing
@@ -78,7 +78,7 @@ $(window).bind("load", function(){
         $('.loading').fadeOut();
 
         $('body').unbind("mousewheel");
-    }, 6000);
+    }, 5000);
 
 
 
