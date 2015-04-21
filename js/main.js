@@ -19,6 +19,18 @@ $(window).bind("load", function(){
       $('.arrow-down1').delay(5000).fadeIn('fast');
       $('.arrow-down').delay(5000).fadeIn('fast');
 
+
+ 
+    $(document).ready(function() {
+        var obj = document.createElement("audio");
+        obj.src="pressing-spacebar.wav";
+        obj.volume=0.05;
+        obj.autoPlay=false;
+        obj.preLoad=true;       
+ 
+        $(".playSound").click(function() {
+            obj.play();
+        });
  
     });
  
@@ -30,17 +42,6 @@ $(window).bind("load", function(){
 
         $('body').unbind("mousewheel");
     }, 5000);
-
-       $(document).ready(function() {
-        var obj = document.createElement("audio");
-        obj.src="pressing-spacebar.wav";
-        obj.volume=0.05;
-        obj.autoPlay=false;
-        obj.preLoad=true;       
- 
-        $(".playSound").click(function() {
-            obj.play();
-        });
     
 
         $(".titleBgSub").typed({
@@ -130,10 +131,8 @@ $(window).bind("load", function(){
 
       animateAnchor: true,
       afterLoad: function(anchorLink) {
-
-
-        if (anchorLink === "secondPage") {
-          $(".counter").text("2");
+         if (anchorLink === "firstPage") {
+          $(".counter").text("1");
            $(".arrow-down").css({'color': '#333'});
            $(".headnav").css('background-color','#F2F2F2');
            $('.Gl').css('visibility','hidden');
@@ -142,11 +141,28 @@ $(window).bind("load", function(){
 
         }
 
-        if(anchorLink!=='secondPage'){
+        if(anchorLink!=='firstPage'){
            $('.Gl').css('visibility','visible');
           $('.Gl').fadeIn();
           $('.menuTip').fadeIn();
           $('#home').removeClass('pulse-link');
+
+        }
+
+
+
+        if (anchorLink === "secondPage") {
+          $(".counter").text("2");
+           $(".arrow-down").css({'color': '#333'});
+           $(".headnav").css('background-color','#ebebeb');
+          
+           $('#aboutme').addClass('pulse-link');
+
+        }
+
+        if(anchorLink!=='secondPage'){
+         
+          $('#about').removeClass('pulse-link');
 
         }
         if (anchorLink === "thirdPage") {
@@ -260,7 +276,7 @@ $(window).bind("load", function(){
         }
         
 
-        if (anchorLink === "thirtenthPage") {
+        if (anchorLink === "thirteenthPage") {
           obj2.play();
           $(".counter").text("13");
            $(".headnav").css('background-color','#fff');
