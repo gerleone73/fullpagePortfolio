@@ -1,6 +1,8 @@
 (function() {
   $(function() {
 
+$("head").append($("<link rel='stylesheet' href='css/styles.css' type='text/css'/>"));
+
 $('body').on({
     'mousewheel': function(e) {
         if (e.target.id == 'el') return;
