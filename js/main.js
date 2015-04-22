@@ -20,6 +20,11 @@ $(window).bind("load", function(){
       $('.arrow-down').delay(5000).fadeIn('fast');
 
 
+if (document.documentElement.clientWidth < 1000) {
+  $('.arrow-down1').fadeOut('fast');
+      $('.arrow-down').fadeOut('fast');
+}
+
  
     $(document).ready(function() {
         var obj = document.createElement("audio");
@@ -45,7 +50,7 @@ $(window).bind("load", function(){
     
 
         $(".titleBgSub").typed({
-            strings: ["Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press this key"],
+            strings: ["Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press the GL"],
             // typing speed
             typeSpeed: 100,
             // time before typing starts
