@@ -617,7 +617,7 @@ body.fullPage-portfolio {
     text-align: center;
     position: relative;
     top: 50%;
-    font-size: 28px;
+    font-size: 18px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
   .overlay ul {
@@ -630,9 +630,7 @@ body.fullPage-portfolio {
     .overlay ul li {
       font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
       display: block;
-
-      
-      min-height: 28px; }
+ }
 
       .overlay ul li a {
         font-weight: 300;
@@ -1856,6 +1854,10 @@ i.icon-antenna{
 
 .fp-slidesNav{
   display:none;
+}
+.overlay ul li{
+  font-size: 12px;
+
 }
 .return{
   display:none !important;
