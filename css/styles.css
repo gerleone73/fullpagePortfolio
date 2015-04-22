@@ -1857,4 +1857,7 @@ i.icon-antenna{
 .fp-slidesNav{
   display:none;
 }
+.return{
+  display:none !important;
+}
 }
