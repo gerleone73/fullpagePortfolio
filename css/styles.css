@@ -817,8 +817,7 @@ html, body {
 }
 .fp-slidesNav.bottom {
     bottom: 50px;
-    border: 1px solid #333;
-    padding:2px 5px;
+  
     vertical-align: middle;
 }
 .fp-slidesNav.top {
@@ -1258,7 +1257,7 @@ background-size: cover;
 
 }
 .pattern{
-    background-image: url('../images/sea2.png');
+    background-image: url('../images/sea2sm.png');
     background-position: cover;
     width: 100%;
     height: 100%;
