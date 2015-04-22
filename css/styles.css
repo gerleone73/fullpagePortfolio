@@ -1814,8 +1814,10 @@ i.icon-antenna{
 }
 
 .arrow-down1, .arrow-down{
-  display:none;
+  display:none !important;
 }
+
+
 
 .section{
   padding: 20px 0;
@@ -1848,5 +1850,12 @@ i.icon-antenna{
 
 .slide p{
   text-align: center;
+}
+}
+
+@media screen and (max-width: 400px) {
+
+.fp-slidesNav{
+  display:none;
 }
 }
