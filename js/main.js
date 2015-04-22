@@ -1,11 +1,7 @@
 (function() {
   $(function() {
 
-  $("head").append($("<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' media='all' rel='stylesheet' type='text/css' />"));
-  $("head").append($("<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/font-awesome/4.0.3/css/font-awesome.css' media='all' rel='stylesheet' type='text/css' />"));
-  $("head").append($("<link rel='stylesheet' href='font-mfizz-1.2/font-mfizz.css' type='text/css' />"));
-
-$("head").append($("<link rel='stylesheet' href='css/styles.css' type='text/css'/>"));
+ 
 
 $('body').on({
     'mousewheel': function(e) {
