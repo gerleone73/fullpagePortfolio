@@ -1255,7 +1255,7 @@ background-size: cover;
 
 }
 .pattern{
-    background-image: url('../images/sea2sm.png');
+    background-image: url('../images/sea2sm-1.png'); /* SEA CHANGE *******/
     background-position: cover;
     width: 100%;
     height: 100%;
