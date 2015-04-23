@@ -15,11 +15,11 @@ $(window).bind("load", function(){
 
 
     $('.section0').css('visibility','visible');
-    $('.headnav').delay(3000 ).fadeIn('fast');
-     $('.total').delay(3000).fadeIn('fast');
-      $('.counter').delay(3000).fadeIn('fast');
-      $('.arrow-down1').delay(3000).fadeIn('fast');
-      $('.arrow-down').delay(3000).fadeIn('fast');
+    $('.headnav').delay(4000 ).fadeIn('fast');
+     $('.total').delay(4000).fadeIn('fast');
+      $('.counter').delay(4000).fadeIn('fast');
+      $('.arrow-down1').delay(4000).fadeIn('fast');
+      $('.arrow-down').delay(4000).fadeIn('fast');
 
 
 if (document.documentElement.clientWidth < 1000) {
@@ -54,7 +54,7 @@ if (document.documentElement.clientWidth < 1000) {
         $(".titleBgSub").typed({
             strings: ["Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press the GL"],
             // typing speed
-            typeSpeed: 100,
+            typeSpeed: 50,
             // time before typing starts
             startDelay: 4600,
             // backspacing speed
@@ -116,12 +116,13 @@ if (document.documentElement.clientWidth < 1000) {
       touchSensitivity: 10,
 
       animateAnchor: true,
+    
       afterLoad: function(anchorLink) {
          if (anchorLink === "firstPage") {
           $(".counter").text("1");
            $(".arrow-down").css({'color': '#333'});
            $(".headnav").css('background-color','#F2F2F2');
-           $('.Gl').css('visibility','hidden');
+           $('.Gl').css('visibility','visible');
            $('.Gl').fadeOut();
            $('#home').addClass('pulse-link');
 
@@ -249,14 +250,16 @@ if (document.documentElement.clientWidth < 1000) {
 
          if (anchorLink === "twelfthPage"){
           $(".counter").text("12");
-             obj2.load();
+
+          $('#section11').find('.slide').addClass('loadImage');
+             obj2.load();         /* added here as well to ensure doesnt play on page 12*/
              $('.nothing').fadeOut(100);
              $('.godard').fadeOut(100);
           $('.author').fadeOut(100);
           $('.music').fadeOut(100);
           $('#neu').css('visibility','hidden');
           $('.birdman').fadeOut(100);
-          $('#nothing').removeClass('pulse-link');  /* added here as well to ensure doesnt play on page 12*/
+          $('#nothing').removeClass('pulse-link');  
         
 
            $(".headnav").css('background-color','#fff');
@@ -279,7 +282,10 @@ if (document.documentElement.clientWidth < 1000) {
         obj2.autoPlay=false;
         obj2.preLoad=true;      
         obj2.play();
-        
+        $(".counter").text("13");
+
+
+     
             
      $('.stop').on( "click", function() {
       obj2.load();
