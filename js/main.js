@@ -15,11 +15,11 @@ $(window).bind("load", function(){
 
 
     $('.section0').css('visibility','visible');
-    $('.headnav').delay(5000 ).fadeIn('fast');
-     $('.total').delay(5000).fadeIn('fast');
-      $('.counter').delay(5000).fadeIn('fast');
-      $('.arrow-down1').delay(5000).fadeIn('fast');
-      $('.arrow-down').delay(5000).fadeIn('fast');
+    $('.headnav').delay(3000 ).fadeIn('fast');
+     $('.total').delay(3000).fadeIn('fast');
+      $('.counter').delay(3000).fadeIn('fast');
+      $('.arrow-down1').delay(3000).fadeIn('fast');
+      $('.arrow-down').delay(3000).fadeIn('fast');
 
 
 if (document.documentElement.clientWidth < 1000) {
@@ -48,7 +48,7 @@ if (document.documentElement.clientWidth < 1000) {
         $('.loading').fadeOut();
 
         $('body').unbind("mousewheel");
-    }, 5000);
+    }, 3000);
     
 
         $(".titleBgSub").typed({
@@ -56,7 +56,7 @@ if (document.documentElement.clientWidth < 1000) {
             // typing speed
             typeSpeed: 100,
             // time before typing starts
-            startDelay: 5000,
+            startDelay: 4600,
             // backspacing speed
             backSpeed: 0,
             // time before backspacing
