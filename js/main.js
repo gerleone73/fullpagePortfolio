@@ -249,12 +249,36 @@ if (document.documentElement.clientWidth < 1000) {
 
          if (anchorLink === "twelfthPage"){
           $(".counter").text("12");
+             obj2.load();
+             $('.nothing').fadeOut(100);
+             $('.godard').fadeOut(100);
+          $('.author').fadeOut(100);
+          $('.music').fadeOut(100);
+          $('#neu').css('visibility','hidden');
+          $('.birdman').fadeOut(100);
+          $('#nothing').removeClass('pulse-link');  /* added here as well to ensure doesnt play on page 12*/
+        
 
-            obj2.src="leb wohl edit -sm.mp3";
+           $(".headnav").css('background-color','#fff');
+          $(".magic").addClass("animated bounceInLeft");
+          $(".trophy").addClass("animated bounceInUp");
+          $('#animation').addClass('pulse-link');
+          $('#fullBg').removeClass('pulse-link');
+          return $(".users").addClass("animated bounceInRight");
+
+         
+        }
+         if(anchorLink!=='twelfthPage'){
+          $('#animation').removeClass('pulse-link');
+        }
+        
+
+        if (anchorLink === "thirteenthPage") {
+              obj2.src="leb wohl edit-sm.mp3";
         obj2.volume=0.3;
         obj2.autoPlay=false;
-        obj2.Load=true;    // preLoad to Load to see if change???   
- 
+        obj2.preLoad=true;      
+        obj2.play();
         
             
      $('.stop').on( "click", function() {
@@ -272,29 +296,7 @@ if (document.documentElement.clientWidth < 1000) {
     $('#neu').css('visibility','hidden');
 
      }); 
-          obj2.load();
-            $('.nothing').fadeOut(100);
-             $('.godard').fadeOut(100);
-          $('.author').fadeOut(100);
-          $('.music').fadeOut(100);
-          $('#neu').css('visibility','hidden');
-          $('.birdman').fadeOut(100);
-
-           $(".headnav").css('background-color','#fff');
-          $(".magic").addClass("animated bounceInLeft");
-          $(".trophy").addClass("animated bounceInUp");
-          $('#animation').addClass('pulse-link');
-          $('#fullBg').removeClass('pulse-link');
-          return $(".users").addClass("animated bounceInRight");
-
-         
-        }
-         if(anchorLink!=='twelfthPage'){
-          $('#animation').removeClass('pulse-link');
-        }
-        
-
-        if (anchorLink === "thirteenthPage") {
+          
           obj2.play();
            
 
