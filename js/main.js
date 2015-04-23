@@ -253,7 +253,7 @@ if (document.documentElement.clientWidth < 1000) {
             obj2.src="leb wohl edit.mp3";
         obj2.volume=0.3;
         obj2.autoPlay=false;
-        obj2.preLoad=true;       
+        obj2.Load=true;    // preLoad to Load to see if change???   
  
         
             
