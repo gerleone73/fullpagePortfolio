@@ -30,7 +30,7 @@ if (document.documentElement.clientWidth < 1000) {
  
     $(document).ready(function() {
         var obj = document.createElement("audio");
-        obj.src="pressing-spacebar.wav";
+        obj.src="pressing-spacebar.mp3";
         obj.volume=0.05;
         obj.autoPlay=false;
         obj.preLoad=true;       
@@ -250,7 +250,7 @@ if (document.documentElement.clientWidth < 1000) {
          if (anchorLink === "twelfthPage"){
           $(".counter").text("12");
 
-            obj2.src="leb wohl edit.mp3";
+            obj2.src="leb wohl edit -sm.mp3";
         obj2.volume=0.3;
         obj2.autoPlay=false;
         obj2.Load=true;    // preLoad to Load to see if change???   
