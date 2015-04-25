@@ -1173,7 +1173,7 @@ hr{
 .titleBg{
 
    
-box-shadow:6px 0 6px 0 #D5FDF6, 0 8px 0 8px #B3CFC9, 0 8px 0 8px #444;
+box-shadow:6px 0 6px 0 #454545, 0 8px 0 8px #313131, 0 8px 0 8px #333;
 
 -webkit-border-radius:3px;
 -moz-border-radius:3px;
@@ -1183,11 +1183,11 @@ padding:1px 5px;
 width: 200px;
 height:200px;
 font-size:100px;
-color: #333;
+color: #B3CFC9;
 line-height:200px;
 text-align:center;
 vertical-align: middle;
-background:#CBFFF5;
+background:#444;
 text-decoration: none;
 
 margin: 0 auto;
@@ -1205,13 +1205,13 @@ font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGo
 
 
 a.playSound:hover, a.playSound:focus, a.playSound:visited{
-  color: #444;
+  color: #A8FFEE;
 }
 
 .titleBg:hover{
   
   text-decoration: none;
- box-shadow:8px 0 8px 0 #D5FDF6, 0 10px 0 10px #B3CFC9, 0 10px 0 10px #444;
+ box-shadow:8px 0 8px 0 #454545, 0 10px 0 10px #313131, 0 10px 0 10px #333;
 }
 
 .titlebg:focus{
@@ -1221,7 +1221,7 @@ border: none;
 
 .titleBg:active{
 font-size:98px;
- box-shadow: 1px 0 2px 0 #eee;
+ box-shadow: 1px 0 2px 0 #333;
   -webkit-transform: translateY(3px);
   -moz-transform: translateY(3px);
   -o-transform: translateY(3px);
@@ -1254,7 +1254,7 @@ font-size:98px;
 
 .titleBgSub{
   
-  color:#444;
+  color:#A8FFEE;
  font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
   height: 12px;
   letter-spacing: 0.02em;
@@ -1263,7 +1263,7 @@ font-size:98px;
   margin-top: -40px;
   padding: 0 0 0 4px;
   
-  font-weight: 600;
+  font-weight: 300;
   text-transform: uppercase;
   z-index: 99999;
 }
