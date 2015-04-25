@@ -101,6 +101,7 @@ if (document.documentElement.clientWidth < 1000) {
      var $counter = $('.counter');
      var $arrowdown = $('.arrow-down');
      var $Gl = $('.Gl');
+     var $Return =$('.return');
      var $headnav = $('.headnav');
      var $home = $('#home');
      var $about = $('#about');
@@ -120,7 +121,7 @@ if (document.documentElement.clientWidth < 1000) {
 
     $("#fullpage").fullpage({
       anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eighthPage","ninthPage", "tenthPage", "eleventhPage", "twelfthPage", "thirteenthPage", 'fourteenthPage'],
-      sectionsColor: ["#fff", "#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff","#ffff","#ffff","#ebebeb"],
+      sectionsColor: ["#fff", "#252525", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff","#ffff","#ffff","#ebebeb"],
 
 
      
@@ -141,7 +142,6 @@ if (document.documentElement.clientWidth < 1000) {
            $arrowdown.css({'color': '#333'});
            $headnav.css('background-color','#F2F2F2');
            $Gl.css('visibility','visible');
-           $Gl.fadeOut();
            $home.addClass('pulse-link');
 
         }
@@ -158,14 +158,22 @@ if (document.documentElement.clientWidth < 1000) {
 
         if (anchorLink === "secondPage") {
           $counter.text("2");
+          $('.gerry').addClass("animated fadeInLeft");
+            $('.gerrytext').addClass("animated fadeInRightBig");
+            $Gl.css('color', '#ebebeb');
+            $Return.css('color', '#ebebeb');
            $arrowdown.css({'color': '#333'});
            $headnav.css('background-color','#ebebeb');
+           
+        
           
            $about.addClass('pulse-link');
 
         }
 
         if(anchorLink!=='secondPage'){
+          $Gl.css('color', '#333');
+          $Return.css('color', '#333');
          
           $about.removeClass('pulse-link');
 
