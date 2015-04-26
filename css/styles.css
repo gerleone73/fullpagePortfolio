@@ -1352,8 +1352,9 @@ background-size: cover;
   color:#ebebeb;
 }
 #section1 p{
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: 0.08em;
+
 }
 
 
@@ -1532,7 +1533,7 @@ span.strike {
   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
  font-weight: 900;
  letter-spacing:;
- color:#333;
+ color:#3D3D3D;
  width: 70px;
   height: 65px;
   visibility: hidden;
@@ -1548,7 +1549,7 @@ span.strike {
     font-size:80px;
   position: fixed;
   top: -1px;
-  color:rgba(50,50,50, 1);
+  color:#3D3D3D;
     left:15px;
  font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
  -webkit-transition: all .3s ease;
@@ -1719,7 +1720,7 @@ i.icon-antenna{
   position: fixed;
   right:0;
 
-  background-color: #F2F2F2;
+  background-color:#FBFBFB;
   z-index:999;
   display:none;
  

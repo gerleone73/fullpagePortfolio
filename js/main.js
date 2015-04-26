@@ -121,7 +121,7 @@ if (document.documentElement.clientWidth < 1000) {
 
     $("#fullpage").fullpage({
       anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eighthPage","ninthPage", "tenthPage", "eleventhPage", "twelfthPage", "thirteenthPage", 'fourteenthPage'],
-      sectionsColor: ["#fff", "#252525", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff","#ffff","#ffff","#ebebeb"],
+      sectionsColor: ["#fff", "#252525", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff","#ffff","#ffff","#252525"],
 
 
      
@@ -140,8 +140,9 @@ if (document.documentElement.clientWidth < 1000) {
          if (anchorLink === "firstPage") {
           $counter.text("1");
            $arrowdown.css({'color': '#333'});
-           $headnav.css('background-color','#F2F2F2');
-           $Gl.css('visibility','visible');
+           $headnav.css('background-color','#FBFBFB');
+           $Gl.css('visibility','hidden');
+           $Gl.css('color', '#A8FFEE');
            $home.addClass('pulse-link');
 
         }
