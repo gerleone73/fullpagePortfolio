@@ -1071,6 +1071,48 @@ background-size: cover;
     overflow-x:hidden;
     
 }
+.fa-twitter, .fa-linkedin-square,.fa-tumblr-square,.fa-github,.fa-youtube-play{
+  color:#ebebeb;
+  font-size: 2em;
+}
+
+.fa-twitter:hover{
+  font-size: 2em;
+  color:#1dcaff;
+ 
+}
+.fa-linkedin-square:hover{
+ 
+  color:#4875B4;
+}
+.fa-tumblr-square:hover{
+
+color:#2B4964;
+}
+
+.fa-github:hover{
+
+color:#9cdaf0;
+}
+
+.fa-youtube-play:hover{
+
+  color:#bb0000;
+}
+.foot p{
+  margin-top:40px;
+  margin-bottom: 40px;
+  text-align:center;
+}
+.foot a{
+color: grey;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+font-weight: 100;
+
+}
+
+
+
 
 .pulse {
   -webkit-animation-name: pulse;
@@ -1448,15 +1490,12 @@ i.icon-antenna{
 
 .form-style{
  background-color: #333;
- border-bottom-color: white;
- border-top: 0;
-  border-left: 0;
-   border-right: 0;
-    border-bottom: 0;
+
+border:0;
 
 font-weight: 200;
   letter-spacing: 0.08em;
- color: white;
+ color: #ebebeb;
    padding: 5px;
 
 }
@@ -1906,6 +1945,10 @@ input[type=reset]:hover{
   font-size: 14px;
   text-align: left;
  
+}
+
+.foot p{
+  text-align: center;
 }
 
 .section .btn{
