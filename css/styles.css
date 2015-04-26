@@ -1175,7 +1175,7 @@ font-weight: 100;
   } 
 
 #section1 h2, #section1 p{
-  color:#ebebeb;
+  color:#D5D9D8;
 }
 #section1 p{
   font-weight: 200;
@@ -1491,21 +1491,30 @@ i.icon-antenna{
 .form-style{
  background-color: #333;
 
-border:0;
+border-bottom:1px solid #252525;
+border-top:0;
+border-left:0;
+border-right: 0;
+ font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
 
+color:#D5D9D8;
 font-weight: 200;
   letter-spacing: 0.08em;
- color: #ebebeb;
+
    padding: 5px;
 
+}
+
+input[type=text]{
+ 
 }
 input[type=submit]{
 
   border: 1px solid #A8FFEE !important;
   background-color: #333;
   margin-left: 10px;
-  color:#A8FFEE;
-  font-weight: 200;
+  color:#D5D9D8;
+  font-weight: 400;
 
 }
 input[type=submit]:hover{
@@ -1517,7 +1526,7 @@ input[type=reset]{
   background-color: #333;
   margin-right: 10px;
   color: orange;
-   font-weight: 200;
+   font-weight: 400;
 }
 
 input[type=reset]:hover{
