@@ -1210,8 +1210,8 @@ font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGo
 
 
 
-a.playSound:hover, a.playSound:focus, a.playSound:visited{
-  color: #A8FFEE;
+a.playsound, a.playSound:hover, a.playSound:focus, a.playSound:visited{
+  color: #A8FFEE !important;
 }
 
 .titleBg:hover{
