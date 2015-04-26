@@ -1087,9 +1087,12 @@ hr{
 .loading{
   
   z-index: 12;
-  top:41%;
+  top:50%;
+  left:50%;
+  margin-left: -11px;
+  margin-top:-11px;
   display: block;
-  position: relative;
+  position: absolute;
    color:#A8FFEE;
  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 
@@ -1720,7 +1723,7 @@ i.icon-antenna{
   position: fixed;
   right:0;
 
-  background-color:#FBFBFB;
+  background-color:#D5D9D8;
   z-index:999;
   display:none;
  
@@ -1979,7 +1982,7 @@ i.icon-antenna{
       -webkit-transition-delay: 0.2s;
       width: 40px;
       height: 4px;
-      background-color: #333;
+      background-color: #444;
       display: block; }
       #menu .menu-bars span:before, #menu .menu-bars span:after {
         position: absolute;
@@ -1987,7 +1990,7 @@ i.icon-antenna{
       #menu .menu-bars span:before, #menu .menu-bars span:after {
         width: 40px;
         height: 4px;
-        background-color: #333;
+        background-color: #444;
         display: block; }
       #menu .menu-bars span:before {
         margin-top: -12px;

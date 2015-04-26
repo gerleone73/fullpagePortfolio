@@ -140,7 +140,7 @@ if (document.documentElement.clientWidth < 1000) {
          if (anchorLink === "firstPage") {
           $counter.text("1");
            $arrowdown.css({'color': '#333'});
-           $headnav.css('background-color','#FBFBFB');
+           $headnav.css('background-color','#D5D9D8');
            $Gl.css('visibility','hidden');
            $Gl.css('color', '#A8FFEE');
            $home.addClass('pulse-link');
