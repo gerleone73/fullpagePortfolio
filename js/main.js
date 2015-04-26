@@ -114,6 +114,7 @@ if (document.documentElement.clientWidth < 1000) {
      var $cncf = $('#cncf');
      var $crowd = $('#crowd');
      var $react = $('#re-act');
+     var $contact =$('#contact');
 
  
 
@@ -365,6 +366,13 @@ if (document.documentElement.clientWidth < 1000) {
           $('.birdman').fadeOut(100);
           $('#nothing').removeClass('pulse-link');
           }
+
+          if (anchorLink === "fourteenthPage") {
+             $counter.text("14");
+            $Gl.css('color', '#ebebeb');
+            $Return.css('color', '#ebebeb');
+         $contact.addClass('pulse-link');
+       }
       }
     });
 
