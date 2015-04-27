@@ -27,6 +27,10 @@ font-smoothing: antialiased;
 
 -webkit-font-smoothing: antialiased;
 -webkit-font-smoothing: subpixel-antialiased;
+  overflow:hidden;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 
 }
 
@@ -217,10 +221,6 @@ label {
 /*  Progress Bars */
 /*----------------------------------------------------------------------------------- */
 
-
-html, body {
-  margin: 0;
-  padding: 0; }
 
 
 .scroll-down {
@@ -491,14 +491,6 @@ body.fullPage-portfolio {
  * 
  * 
  */
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow:hidden;
-
-    /*Avoid flicker on slides transitions for mobile phones #336 */
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
 #superContainer {
     height: 100%;
     position: relative;
@@ -1387,14 +1379,6 @@ span.strike {
 }
 
 
-i.icon-antenna{
-  position: fixed;
-  z-index: 70;
-  top: 10px;
-  left: 40px;
-  cursor: pointer;
- font-size: 50px;
-}
 
 .container{
   width: 90%;
@@ -1602,8 +1586,8 @@ input[type=reset]:hover{
 }
 
 
-.intro{
-  margin-top: 2em;
+.intro{   /* REMOVED MARGIN: 2em; */
+ 
 }
 
 .headnav{
@@ -1671,40 +1655,6 @@ input[type=reset]:hover{
  }
 
 
-.anime {
-  width: 200px;
-  height: 200px;
-  background-color: coral;
-  animation: square-to-circle 2s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
-}
- 
-@keyframes square-to-circle {
-  0%  {
-    border-radius:0 0 0 0;
-    background:coral;
-    transform:rotate(0deg);
-  }
-  25%  {
-    border-radius:50% 0 0 0;
-    background:darksalmon;
-    transform:rotate(45deg);
-  }
-  50%  {
-    border-radius:50% 50% 0 0;
-    background:indianred;
-    transform:rotate(90deg);
-  }
-  75%  { 
-    border-radius:50% 50% 50% 0;
-    background:lightcoral;
-    transform:rotate(135deg);
-  }
-  100% {  
-    border-radius:50%;
-    background:darksalmon;
-    transform:rotate(180deg);
-  }
-}
 
 
 @-webkit-keyframes fadeInLeft {
