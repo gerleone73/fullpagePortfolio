@@ -369,6 +369,7 @@ if (document.documentElement.clientWidth < 1000) {
 
           if (anchorLink === "fourteenthPage") {
              $counter.text("14");
+              $('.author').fadeOut(100);
             $Gl.css('color', '#ebebeb');
             $Return.css('color', '#ebebeb');
          $contact.addClass('pulse-link');

@@ -793,10 +793,7 @@ body.no-scrollbar {
   padding-right: 10px;
   font-size: 1.2em;
 }
-.git{
-  padding-bottom: 7px;
-  opacity: .9;
-}
+
 .js{
   margin-bottom: 15px;
 }
@@ -1063,9 +1060,10 @@ background-size: cover;
     overflow-x:hidden;
     
 }
-.fa-twitter, .fa-linkedin-square,.fa-tumblr-square,.fa-github,.fa-youtube-play{
+.fa-twitter, .fa-linkedin-square,.fa-tumblr-square,#section13 .fa-github,.fa-youtube-play{
   color:#ebebeb;
   font-size: 2em;
+  cursor: pointer;
 }
 
 .fa-twitter:hover{
@@ -1082,7 +1080,7 @@ background-size: cover;
 color:#2B4964;
 }
 
-.fa-github:hover{
+#section13 .fa-github:hover{
 
 color:#9cdaf0;
 }
@@ -1091,16 +1089,31 @@ color:#9cdaf0;
 
   color:#bb0000;
 }
-.foot p{
+
+.myemail:hover{
+ 
+}
+.foot {
   margin-top:40px;
   margin-bottom: 40px;
   text-align:center;
+  color:#555;
 }
 .foot a{
 color: grey;
   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 font-weight: 100;
 
+}
+
+.foot a:hover{
+   text-decoration: underline;
+}
+
+.fa-envelope-o{
+  vertical-align: middle;
+  font-size: 1em;
+  padding: 0 .05em .2em .1em;
 }
 
 
@@ -1489,6 +1502,8 @@ font-weight: 200;
 
 }
 
+
+
 input[type=text]{
  
 }
@@ -1497,7 +1512,7 @@ input[type=submit]{
   border: 1px solid #A8FFEE !important;
   background-color: #333;
   margin-left: 10px;
-  color:#D5D9D8;
+  color:#A8FFEE;
   font-weight: 400;
 
 }
