@@ -16,50 +16,26 @@ $(window).bind("load", function(){
   var $arrowdown = $('.arrow-down');
   var $arrowdown1 = $('.arrow-down1');
 
+  $('body').addClass('loaded');
+  $('.loading').fadeOut();
+
+  $('body').unbind("mousewheel");
+
 
     $('.section0').css('visibility','visible');
-    $('.headnav').delay(4000 ).fadeIn('fast');
-     $('.total').delay(4000).fadeIn('fast');
-      $('.counter').delay(4000).fadeIn('fast');
-      $('.arrow-down1').delay(4000).fadeIn('fast');
-      $('.arrow-down').delay(4000).fadeIn('fast');
+    $('.headnav').fadeIn('fast');
+     $('.total').fadeIn('fast');
+      $('.counter').fadeIn('fast');
+      $arrowdown1.fadeIn('fast');
+      $arrowdown.fadeIn('fast');
 
-
-if (document.documentElement.clientWidth < 1000) {
-  $arrowdown.fadeOut('fast');
-     $arrowdown1.fadeOut('fast');
-}
-
- 
-    $(document).ready(function() {
-        var obj = document.createElement("audio");
-        obj.src="pressing-spacebar.mp3";
-        obj.volume=0.05;
-        obj.autoPlay=false;
-        obj.preLoad=true;       
- 
-        $(".playSound").click(function() {
-            obj.play();
-        });
- 
-    });
- 
-
-    // Fakes the loading setting a timeout & unbind mouswheel to allow scroll
-    setTimeout(function() {
-        $('body').addClass('loaded');
-        $('.loading').fadeOut();
-
-        $('body').unbind("mousewheel");
-    }, 3000);
-    
 
         $(".titleBgSub").typed({
             strings: ["Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press the GL"],
             // typing speed
             typeSpeed: 50,
             // time before typing starts
-            startDelay: 4600,
+            startDelay:1000,
             // backspacing speed
             backSpeed: 0,
             // time before backspacing
@@ -85,6 +61,31 @@ if (document.documentElement.clientWidth < 1000) {
             // callback for reset
             resetCallback: function() {}
         });
+
+
+if (document.documentElement.clientWidth < 1000) {
+  $arrowdown.fadeOut('fast');
+     $arrowdown1.fadeOut('fast');
+}
+
+ 
+    $(document).ready(function() {
+        var obj = document.createElement("audio");
+        obj.src="pressing-spacebar.mp3";
+        obj.volume=0.05;
+        obj.autoPlay=false;
+        obj.preLoad=true;       
+ 
+        $(".playSound").click(function() {
+            obj.play();
+        });
+ 
+    });
+ 
+
+   
+    
+
   
 });
 
@@ -378,7 +379,7 @@ if (document.documentElement.clientWidth < 1000) {
     });
 
 
-  
+ 
 
 
 

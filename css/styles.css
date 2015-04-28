@@ -1499,19 +1499,19 @@ font-weight: 200;
   letter-spacing: 0.08em;
 
    padding: 5px;
+   width:100%;
 
 }
 
 
 
-input[type=text]{
- 
-}
+
 input[type=submit]{
 
   border: 1px solid #A8FFEE !important;
   background-color: #333;
-  margin-left: 10px;
+   padding: 7px 20px;
+  width: auto;
   color:#A8FFEE;
   font-weight: 400;
 
@@ -1519,19 +1519,9 @@ input[type=submit]{
 input[type=submit]:hover{
   background-color:#A8FFEE;
   color: #333;
-}
-input[type=reset]{
-  border: 1px solid orange !important;
-  background-color: #333;
-  margin-right: 10px;
-  color: orange;
-   font-weight: 400;
+
 }
 
-input[type=reset]:hover{
-  background-color: orange;
-  color:#333;
-}
 
 ::-webkit-input-placeholder {
    color: grey;
@@ -1548,6 +1538,73 @@ input[type=reset]:hover{
 :-ms-input-placeholder {  
    color: grey;  
 }
+
+
+form {
+  padding: 0;
+  margin: 0 0 20px;
+}
+table {
+  margin: 0 auto;
+  width:100%;
+}
+tr, td, input, textarea {
+  margin: 0;
+  padding: 0;
+}
+td {
+  padding: 0 0 5px;
+}
+tr td:first-child {
+  padding-right: 10px;
+  padding-top: 11px;
+  text-align: right;
+  vertical-align: top;
+}
+.error[generated=true] {
+  color: orange;
+  font-size: 16px;
+  padding: 5px 0 2px 5px;
+  font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+  font-weight: 300;
+
+}
+tr.error td {
+  padding: 0;
+}
+input, textarea {
+  background: #333;
+  border: 0;
+  font: inherit;
+  font-size: 16px;
+  line-height: 29px;
+  min-height: 30px;
+  padding: 5px 10px;
+  width: 100%;
+}
+input:focus, textarea:focus {
+  border-color: #b0c3d0;
+  outline: none;
+}
+textarea {
+  height: 240px;
+  resize: vertical;
+}
+
+ 
+#response {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Inconsolata', "Apercu Mono Regular", 'Andale Mono', monospace;
+
+}
+#response .success {
+  color: #08a300;
+}
+#response .failure {
+  color: #dc0000;
+}
+
 
 .nothing, .godard{
   color: red;
