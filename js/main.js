@@ -31,11 +31,11 @@ $(window).bind("load", function(){
 
 
         $(".titleBgSub").typed({
-            strings: ["Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press the GL"],
+            strings: [ "Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press the GL"],
             // typing speed
             typeSpeed: 50,
             // time before typing starts
-            startDelay:1000,
+            startDelay:1800,
             // backspacing speed
             backSpeed: 0,
             // time before backspacing
@@ -43,7 +43,7 @@ $(window).bind("load", function(){
             // loop
             loop: false,
             // false = infinite
-            loopCount: false,
+            loopCount: 2,
             // show cursor
             showCursor: false,
             // character for cursor
