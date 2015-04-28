@@ -32,6 +32,8 @@ font-smoothing: antialiased;
     /*Avoid flicker on slides transitions for mobile phones #336 */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 
+
+
 }
 
 
@@ -712,6 +714,7 @@ body {
   font-weight: 400;
   font-size: 100%;
   text-rendering: optimizelegibility;
+   -webkit-font-smoothing: antialiased;
   color:#000;
 }
 
@@ -1287,6 +1290,10 @@ color:#BA3126;
   color:#3285E7;
 }
 
+#section10 h1{
+  color:#2D0C9B;
+}
+
 
 .btn{
   font-family: 'Open Sans', sans-serif;
@@ -1306,6 +1313,12 @@ color:#BA3126;
 border:#444;
 
 }
+#section1 .btn-warning:hover{
+background-color:#A8FFEE;
+border:#A8FFEE;
+}
+
+
 
 #section2 .btn-warning:hover{
 background-color:#DD8F00;
@@ -1313,8 +1326,8 @@ border:#DD8F00;
 }
 
 #section3 .btn-warning:hover{
-background-color:#5e5e5e;
-border: #5e5e5e;
+background-color:#000;
+border: #000;
 }
 
 
@@ -1331,12 +1344,17 @@ border: #FD301B;
 }
 
 #section6 .btn-warning:hover{
-background-color: #3F0B3F;
-border: #3F0B3F;
+
+
 }
 
 #section7 .btn-warning:hover{
 
+}
+
+#section10 .btn-warning:hover{
+  background-color: #2D0C9B;
+  border: #2D0C9B;
 }
 
 span.strike {
@@ -1510,10 +1528,11 @@ input[type=submit]{
 
   border: 1px solid #A8FFEE !important;
   background-color: #333;
-   padding: 7px 20px;
+   padding: 7px 30px;
   width: auto;
   color:#A8FFEE;
   font-weight: 400;
+  text-align: center;
 
 }
 input[type=submit]:hover{
@@ -1542,7 +1561,7 @@ input[type=submit]:hover{
 
 form {
   padding: 0;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
 }
 table {
   margin: 0 auto;
@@ -1556,7 +1575,7 @@ td {
   padding: 0 0 5px;
 }
 tr td:first-child {
-  padding-right: 10px;
+  padding-right: 0px;
   padding-top: 11px;
   text-align: right;
   vertical-align: top;
@@ -1602,7 +1621,7 @@ textarea {
   color: #08a300;
 }
 #response .failure {
-  color: #dc0000;
+  color: orange;
 }
 
 
@@ -1617,10 +1636,10 @@ textarea {
 
 .section p.author{
   text-align: center;
-  font-size:1.25em;
+  font-size:1em;
    display: none;
    text-transform: uppercase;
-   font-weight: 600;
+   font-weight: 300;
 }
 
 .section p.music{
@@ -1636,7 +1655,7 @@ textarea {
   text-align: center;
 }
 
-.section p#neu{
+.section p #neu{
   visibility: hidden;
   color:#333;
   font-size: 1.25em;
