@@ -162,6 +162,7 @@ if (document.documentElement.clientWidth < 1000) {
         if (anchorLink === "secondPage") {
           $counter.text("2");
           $('.gerry').addClass("animated fadeInLeft");
+         
             $('.gerrytext').addClass("animated fadeInRightBig");
             $Gl.css('color', '#ebebeb');
             $Return.css('color', '#ebebeb');

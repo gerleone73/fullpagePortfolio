@@ -49,8 +49,8 @@ $(function() {
   		$("#send").attr("value", "Sending...");
   		$(form).ajaxSubmit({
   			success: function(responseText, statusText, xhr, $form) {
-  				$(form).slideUp("fast");
-  				$("#response").html(responseText).hide().slideDown("fast");
+  				$(form).slideUp("slow");
+  				$("#response").html(responseText).hide().slideDown("slow");
   			}
   		});
   		return false;

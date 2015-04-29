@@ -1181,13 +1181,25 @@ font-weight: 100;
 #section1 h1{
   color:#A8FFEE;
   } 
+  #section1 h3{
+  color:#D5D9D8;
+    font-size: 1em;
+    margin-bottom: 1.25em;
+  }
+
+  .icon-name{
+    font-size: 11px;
+    color:#A8FFEE;
+    font-weight:300;
+  }
 
 #section1 h2, #section1 p{
   color:#D5D9D8;
 }
 #section1 p{
   font-weight: 200;
-  letter-spacing: 0.08em;
+
+  
 
 }
 
@@ -1316,6 +1328,7 @@ border:#444;
 #section1 .btn-warning:hover{
 background-color:#A8FFEE;
 border:#A8FFEE;
+color:#333;
 }
 
 
@@ -1776,7 +1789,7 @@ textarea {
   }
 }
 
-.gerry, .gerrytext{
+.gerry, .gerrytext, .icon-key{
   opacity:0;
   -webkit-animation-delay: 0s;
   animation-delay:0s;
