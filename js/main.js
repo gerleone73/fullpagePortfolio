@@ -29,6 +29,11 @@ $(window).bind("load", function(){
       $arrowdown1.fadeIn('fast');
       $arrowdown.fadeIn('fast');
 
+      setTimeout(function(){
+      $('.home-contact').css('opacity', '0').addClass('slideDown');
+      $('menu-bars').css('opacity', '0').addClass('slideDown');
+   }, 1600);
+
 
         $(".titleBgSub").typed({
             strings: [ "Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press the GL"],
@@ -103,7 +108,7 @@ if (document.documentElement.clientWidth < 1000) {
      var $arrowdown = $('.arrow-down');
      var $Gl = $('.Gl');
      var $Return =$('.return');
-     var $headnav = $('.headnav');
+     
      var $home = $('#home');
      var $about = $('#about');
      var $wise = $('#wise');
@@ -142,7 +147,7 @@ if (document.documentElement.clientWidth < 1000) {
          if (anchorLink === "firstPage") {
           $counter.text("1");
            $arrowdown.css({'color': '#333'});
-           $headnav.css('background-color','#D5D9D8');
+          // $headnav.css('background-color','#D5D9D8');
            $Gl.css('visibility','hidden');
            $Gl.css('color', '#A8FFEE');
            $home.addClass('pulse-link');
@@ -163,11 +168,12 @@ if (document.documentElement.clientWidth < 1000) {
           $counter.text("2");
           $('.gerry').addClass("animated fadeInLeft");
          
+
             $('.gerrytext').addClass("animated fadeInRightBig");
             $Gl.css('color', '#ebebeb');
             $Return.css('color', '#ebebeb');
            $arrowdown.css({'color': '#333'});
-           $headnav.css('background-color','#ebebeb');
+           //$headnav.css('background-color','#ebebeb');
            
         
           
@@ -184,7 +190,7 @@ if (document.documentElement.clientWidth < 1000) {
         }
         if (anchorLink === "thirdPage") {
           $counter.text("3");
-           $headnav.css('background-color','#fff');
+           //$headnav.css('background-color','#fff');
          $wise.addClass('pulse-link');
         }
         if(anchorLink!=='thirdPage'){
@@ -195,7 +201,7 @@ if (document.documentElement.clientWidth < 1000) {
         if (anchorLink === "fourthPage") {
           $counter.text("4");
 
-          $headnav.css('background-color','#ebebeb');
+          //$headnav.css('background-color','#ebebeb');
         $sine.addClass('pulse-link');
         }
          if(anchorLink!=='fourthPage'){
@@ -205,7 +211,7 @@ if (document.documentElement.clientWidth < 1000) {
 
           if (anchorLink === "fifthPage") {
           $counter.text("5");
-          $headnav.css('background-color','#fff');
+          //$headnav.css('background-color','#fff');
         
          $styles.addClass('pulse-link');
         }
@@ -217,7 +223,7 @@ if (document.documentElement.clientWidth < 1000) {
           if (anchorLink === "sixthPage") { 
           $counter.text("6");
        
-         $headnav.css('background-color','#ebebeb');
+         //$headnav.css('background-color','#ebebeb');
          $kraftwerk.addClass('pulse-link');
         }
          if(anchorLink!=='sixthPage'){
@@ -228,7 +234,7 @@ if (document.documentElement.clientWidth < 1000) {
         if (anchorLink === "seventhPage") {
           $counter.text("7");
         
-         $headnav.css('background-color','#fff');
+        // $headnav.css('background-color','#fff');
         $his.addClass('pulse-link');
         }
          if(anchorLink!=='seventhPage'){
@@ -238,7 +244,7 @@ if (document.documentElement.clientWidth < 1000) {
         if (anchorLink === "eighthPage") {
           $counter.text("8");
         
-         $headnav.css('background-color','#ebebeb');
+        // $headnav.css('background-color','#ebebeb');
          $misc.addClass('pulse-link');
         }
          if(anchorLink!== "eighthPage"){
@@ -249,7 +255,7 @@ if (document.documentElement.clientWidth < 1000) {
         if (anchorLink === "ninthPage") {
           $counter.text("9");
         
-         $headnav.css('background-color','#fff');
+        // $headnav.css('background-color','#fff');
          $cncf.addClass('pulse-link');
         }
          if(anchorLink!=='ninthPage'){
@@ -259,7 +265,7 @@ if (document.documentElement.clientWidth < 1000) {
         if (anchorLink === "tenthPage") {
           $counter.text("10");
       
-         $headnav.css('background-color','#ebebeb');
+        // $headnav.css('background-color','#ebebeb');
          $crowd.addClass('pulse-link');
         }
          if(anchorLink!=='tenthPage'){
@@ -271,7 +277,7 @@ if (document.documentElement.clientWidth < 1000) {
 
         if (anchorLink === "eleventhPage") {
           $counter.text("11");
-           $headnav.css('background-color','#fff');
+          // $headnav.css('background-color','#fff');
          $react.addClass('pulse-link'); 
         }
          if(anchorLink!=='eleventhPage'){
@@ -292,7 +298,7 @@ if (document.documentElement.clientWidth < 1000) {
           $('#nothing').removeClass('pulse-link');  
         
 
-           $headnav.css('background-color','#fff');
+          
           $(".magic").addClass("animated bounceInLeft");
           $(".trophy").addClass("animated bounceInUp");
           $('#animation').addClass('pulse-link');
@@ -338,7 +344,7 @@ if (document.documentElement.clientWidth < 1000) {
 
           $counter.text("13");
          
-           $headnav.css('background-color','#fff');
+         //  $headnav.css('background-color','#fff');
           $('.nothing').fadeIn('slow').birdman({
                         speedup:false,
                         delay:0

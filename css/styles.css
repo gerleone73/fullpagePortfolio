@@ -1700,10 +1700,9 @@ textarea {
   position: fixed;
   right:0;
 
-  background-color:#D5D9D8;
+  background-color:rgba(250, 250, 250, 0);
   z-index:999;
-  display:none;
- 
+  display:none; 
 }
 
 
@@ -1916,7 +1915,8 @@ textarea {
     position: relative;
     display: inline-block;
     width: 40px;
-    height: 4px; }
+    height: 4px; 
+    }
     #menu .menu-bars span {
       margin: 0 auto;
       position: relative;
@@ -1957,6 +1957,102 @@ textarea {
       -webkit-transform: rotate(-45deg);
       -webkit-transition-delay: 0, 0.2s; }
 
+.fp-viewing-secondPage .headnav,
+.fp-viewing-fourteenthPage .headnav {
+    background: transparent !important;
+}
+
+.fp-viewing-secondPage #menu .menu-bars span,
+.fp-viewing-secondPage #menu .menu-bars span:before,
+.fp-viewing-secondPage #menu .menu-bars span:after,
+.fp-viewing-fourteenthPage #menu .menu-bars span,
+.fp-viewing-fourteenthPage #menu .menu-bars span:before,
+.fp-viewing-fourteenthPage #menu .menu-bars span:after {
+    background: #fff;
+}
+.fp-viewing-secondPage #menu .menu-bars.open span,
+.fp-viewing-fourteenthPage #menu .menu-bars.open span {
+    background: inherit;
+}
+
+
+
+  .home-contact{
+  visibility: hidden;
+  top:2.5em;
+  position: absolute;
+  color:#333;
+  z-index: 999999;
+  border-bottom: 1px solid #333;
+  
+    font-size: 1em;
+    right: 100px;
+  }
+  .home-contact:hover{
+    border-bottom: 1px solid grey;
+  }
+
+.slideDown{
+
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;  
+  -moz-animation-name: slideDown; 
+
+  animation-duration: 1.75s;  
+  -webkit-animation-duration: 1.75s;
+  -mos-animation-duration: 1.75s;
+
+  animation-timing-function: ease;  
+  -moz-animation-timing-function: ease; 
+
+  opacity: 1!important;
+
+  visibility: visible!important;  
+
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  50%{
+    transform: translateY(8%);
+  }
+  65%{
+    transform: translateY(-4%);
+  }
+  80%{
+    transform: translateY(4%);
+  }
+  95%{
+    transform: translateY(-2%);
+  }     
+  100% {
+    transform: translateY(0%);
+  }   
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+  50%{
+    -webkit-transform: translateY(8%);
+  }
+  65%{
+    -webkit-transform: translateY(-4%);
+  }
+  80%{
+    -webkit-transform: translateY(4%);
+  }
+  95%{
+    -webkit-transform: translateY(-2%);
+  }     
+  100% {
+    -webkit-transform: translateY(0%);
+  } 
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -1967,7 +2063,9 @@ textarea {
 
 @media screen and (max-width: 1000px) {
 
-
+.headnav{
+  background-color:rgba(250,250,250, 0.5);
+}
 
 
 .overlay ul li{
