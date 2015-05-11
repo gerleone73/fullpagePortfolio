@@ -13,6 +13,7 @@ $('body').on({
 
 $(window).bind("load", function(){
 
+
   var $arrowdown = $('.arrow-down');
   var $arrowdown1 = $('.arrow-down1');
 
@@ -24,19 +25,49 @@ $(window).bind("load", function(){
 
     $('.section0').css('visibility','visible');
     $('.headnav').fadeIn('fast');
+    
      $('.total').fadeIn('fast');
       $('.counter').fadeIn('fast');
       $arrowdown1.fadeIn('fast');
       $arrowdown.fadeIn('fast');
+     $('.hidden-text-off').hide();
+     $('.hidden-text-on').hide();
+     $('.hidden-text-me').hide();
+
+
+
 
       setTimeout(function(){
-      $('.home-contact').css('opacity', '0').addClass('slideDown');
+      $('.home-3-btns').css('opacity', '0').addClass('slideDown');
+
+
       $('menu-bars').css('opacity', '0').addClass('slideDown');
    }, 1600);
 
+      $('.turn-off').mouseover(function(){
+        $('.hidden-text-off').show();
+      })
+      $('.turn-off').mouseleave(function(){
+        $('.hidden-text-off').hide();
+      })
+       $('.turn-on').mouseover(function(){
+        $('.hidden-text-on').show();
+      })
+      $('.turn-on').mouseleave(function(){
+        $('.hidden-text-on').hide();
+      })
+       $('.contact-me').mouseover(function(){
+        $('.hidden-text-me').show();
+      })
+      $('.contact-me').mouseleave(function(){
+        $('.hidden-text-me').hide();
+      })
+
+    //  $('.home-3-btns').addClass('btns-fixed');
+
 
         $(".titleBgSub").typed({
-            strings: [ "Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press the GL"],
+            strings: [ "Frontend Web Dev","HTML5 CSS JAVASCRIPT", "UX &amp; UI", "Press this Key"],
             // typing speed
             typeSpeed: 50,
             // time before typing starts
@@ -122,41 +153,75 @@ if (document.documentElement.clientWidth < 1000) {
      var $react = $('#re-act');
      var $contact =$('#contact');
 
- 
 
+
+   $(".turn-off").on('click',function(){
+            $('.turn-off').addClass('auto-normal');
+            $('.turn-on').removeClass('auto-normal');
+
+        $.fn.fullpage.setAutoScrolling(false);
+
+        $('body').css('overflow-x', 'hidden');
+
+         });
+
+           $(".turn-on").on('click',function(){
+            $('.turn-on').addClass('auto-normal');
+            $('.turn-off').removeClass('auto-normal');
+            
+
+        $.fn.fullpage.setAutoScrolling(true);
+        });
+
+
+      var abler = $("#abler");
+
+    abler.click(function() {
+        if ($(this).is(":checked")) {
+            $("#submitBtn").removeAttr("disabled");
+        } else {
+            $("#submitBtn").attr("disabled", "disabled");
+        }
+    });
 
 
     $("#fullpage").fullpage({
       anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage", "sixthPage","seventhPage","eighthPage","ninthPage", "tenthPage", "eleventhPage", "twelfthPage", "thirteenthPage", 'fourteenthPage'],
-      sectionsColor: ["#fff", "#252525", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff","#ffff","#ffff","#252525"],
-
-
-     
+      sectionsColor: ["#fff", "#252525", "#fff","#ebebeb", "#fff","#ebebeb", "#fff","#ebebeb","#fff","#ebebeb","#fff","#ebebeb","#ffff","#fff"],
        slidesNavigation: true,
         slidesNavPosition: 'bottom',
-
       scrollingSpeed: 1000,
       easing: 'easeInOutExpo',
       keyboardScrolling: true,
       responsive:1000,
       touchSensitivity: 10,
-
+      autoScrolling: true,
       animateAnchor: true,
     
       afterLoad: function(anchorLink) {
+        
+
+
          if (anchorLink === "firstPage") {
+
+        
+$('.home-3-btns').htm;
+
           $counter.text("1");
            $arrowdown.css({'color': '#333'});
           // $headnav.css('background-color','#D5D9D8');
-           $Gl.css('visibility','hidden');
-           $Gl.css('color', '#A8FFEE');
+          $Gl.css('color','#A8FFEE');
+    
+
+           
            $home.addClass('pulse-link');
 
         }
 
         if(anchorLink!=='firstPage'){
-           $Gl.css('visibility','visible');
-          $Gl.fadeIn();
+           $Gl.css('color','#333');
+        //  $Gl.fadeIn();
+        $('.home-3-btnsmall').fadeIn();
           $('.menuTip').fadeIn();
           $home.removeClass('pulse-link');
 
@@ -167,14 +232,19 @@ if (document.documentElement.clientWidth < 1000) {
         if (anchorLink === "secondPage") {
           $counter.text("2");
           $('.gerry').addClass("animated fadeInLeft");
-         
+       
 
             $('.gerrytext').addClass("animated fadeInRightBig");
             $Gl.css('color', '#ebebeb');
             $Return.css('color', '#ebebeb');
            $arrowdown.css({'color': '#333'});
            //$headnav.css('background-color','#ebebeb');
-           
+          $('.gerry').cycle({
+            timeout:900,
+            speed: 900,
+            fx: 'fade',
+            loop: 1,
+          }) 
         
           
            $about.addClass('pulse-link');
@@ -182,7 +252,7 @@ if (document.documentElement.clientWidth < 1000) {
         }
 
         if(anchorLink!=='secondPage'){
-          $Gl.css('color', '#333');
+          
           $Return.css('color', '#333');
          
           $about.removeClass('pulse-link');
@@ -286,8 +356,20 @@ if (document.documentElement.clientWidth < 1000) {
 
          if (anchorLink === "twelfthPage"){
           $counter.text("12");
+          $("#api").addClass('pulse-link');
 
-          $('#section11').find('.slide').addClass('loadImage');
+
+         
+        }
+         if(anchorLink!=='twelfthPage'){
+          $('#api').removeClass('pulse-link');
+        }
+
+
+          if (anchorLink === "thirteenthPage") {
+             $counter.text("13");
+              $('.author').fadeOut(100);
+                $('#section11').find('.slide').addClass('loadImage');
              obj2.load();         /* added here as well to ensure doesnt play on page 12*/
              $('.nothing').fadeOut(100);
              $('.godard').fadeOut(100);
@@ -295,33 +377,39 @@ if (document.documentElement.clientWidth < 1000) {
           $('.music').fadeOut(100);
           $('#neu').css('visibility','hidden');
           $('.birdman').fadeOut(100);
-          $('#nothing').removeClass('pulse-link');  
-        
-
+          $('#nothing').removeClass('pulse-link'); 
           
-          $(".magic").addClass("animated bounceInLeft");
-          $(".trophy").addClass("animated bounceInUp");
-          $('#animation').addClass('pulse-link');
-          $('#fullBg').removeClass('pulse-link');
-          return $(".users").addClass("animated bounceInRight");
-
-         
-        }
-         if(anchorLink!=='twelfthPage'){
-          $('#animation').removeClass('pulse-link');
-        }
         
 
-        if (anchorLink === "thirteenthPage") {
+          //  $Gl.css('color', '#ebebeb');
+          //  $Return.css('color', '#ebebeb');
+         $contact.addClass('pulse-link');
+       }
+
+       if(anchorLink !== "thirteenthPage") {
+        $contact.removeClass('pulse-link');
+       }
+        
+
+        if (anchorLink === "fourteenthPage") {
               obj2.src="leb wohl edit-sm.mp3";
         obj2.volume=0.3;
         obj2.autoPlay=false;
-        obj2.preLoad=true;      
+        obj2.preLoad=true; 
+        if (typeof obj2.loop == 'boolean')
+{
+    obj2.loop = true;
+}
+else
+{
+    obj2.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}     
         obj2.play();
-        $counter.text("13");
-
-
-     
+        
+        $counter.text("14");
             
      $('.stop').on( "click", function() {
       obj2.load();
@@ -342,7 +430,7 @@ if (document.documentElement.clientWidth < 1000) {
           obj2.play();
            
 
-          $counter.text("13");
+          
          
          //  $headnav.css('background-color','#fff');
           $('.nothing').fadeIn('slow').birdman({
@@ -363,7 +451,7 @@ if (document.documentElement.clientWidth < 1000) {
           $('#nothing').addClass('pulse-link');
         }
          
-          if (anchorLink !== "thirteenthPage"){
+          if (anchorLink !== "fourteenthPage"){
             obj2.load();
            
              $('.nothing').fadeOut(100);
@@ -375,18 +463,11 @@ if (document.documentElement.clientWidth < 1000) {
           $('#nothing').removeClass('pulse-link');
           }
 
-          if (anchorLink === "fourteenthPage") {
-             $counter.text("14");
-              $('.author').fadeOut(100);
-            $Gl.css('color', '#ebebeb');
-            $Return.css('color', '#ebebeb');
-         $contact.addClass('pulse-link');
-       }
       }
     });
 
 
- 
+
 
 
 
