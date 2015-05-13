@@ -71,7 +71,7 @@ $(window).bind("load", function(){
             // typing speed
             typeSpeed: 50,
             // time before typing starts
-            startDelay:1800,
+            startDelay:1200,
             // backspacing speed
             backSpeed: 0,
             // time before backspacing
@@ -79,7 +79,7 @@ $(window).bind("load", function(){
             // loop
             loop: false,
             // false = infinite
-            loopCount: 2,
+            loopCount: 0,
             // show cursor
             showCursor: false,
             // character for cursor
@@ -139,7 +139,6 @@ if (document.documentElement.clientWidth < 1000) {
      var $arrowdown = $('.arrow-down');
      var $Gl = $('.Gl');
      var $Return =$('.return');
-     
      var $home = $('#home');
      var $about = $('#about');
      var $wise = $('#wise');
@@ -152,12 +151,24 @@ if (document.documentElement.clientWidth < 1000) {
      var $crowd = $('#crowd');
      var $react = $('#re-act');
      var $contact =$('#contact');
+     var $turnOff = $ (".turn-off");
+     var $turnOn = $(".turn-on");
+     var $abler = $("#abler");
+     var $api = $("#api");
+     var $nothing = $('.nothing');
+     var $Nothing = $('#nothing');
+     var $godard = $('.godard');
+     var $author = $('.author');
+     var $music = $('.music');
+     var $neu = $('#neu');
+     var $birdman =$('.birdman');
 
 
 
-   $(".turn-off").on('click',function(){
-            $('.turn-off').addClass('auto-normal');
-            $('.turn-on').removeClass('auto-normal');
+
+   $turnOff.on('click',function(){
+            $turnOff.addClass('auto-normal');
+            $turnOn.removeClass('auto-normal');
 
         $.fn.fullpage.setAutoScrolling(false);
 
@@ -165,18 +176,18 @@ if (document.documentElement.clientWidth < 1000) {
 
          });
 
-           $(".turn-on").on('click',function(){
-            $('.turn-on').addClass('auto-normal');
-            $('.turn-off').removeClass('auto-normal');
+           $turnOn.on('click',function(){
+            $turnOn.addClass('auto-normal');
+            $turnOff.removeClass('auto-normal');
             
 
         $.fn.fullpage.setAutoScrolling(true);
         });
 
 
-      var abler = $("#abler");
+     
 
-    abler.click(function() {
+    $abler.click(function() {
         if ($(this).is(":checked")) {
             $("#submitBtn").removeAttr("disabled");
         } else {
@@ -205,7 +216,7 @@ if (document.documentElement.clientWidth < 1000) {
          if (anchorLink === "firstPage") {
 
         
-$('.home-3-btns').htm;
+
 
           $counter.text("1");
            $arrowdown.css({'color': '#333'});
@@ -222,7 +233,7 @@ $('.home-3-btns').htm;
            $Gl.css('color','#333');
         //  $Gl.fadeIn();
         $('.home-3-btnsmall').fadeIn();
-          $('.menuTip').fadeIn();
+          
           $home.removeClass('pulse-link');
 
         }
@@ -356,28 +367,28 @@ $('.home-3-btns').htm;
 
          if (anchorLink === "twelfthPage"){
           $counter.text("12");
-          $("#api").addClass('pulse-link');
+          $api.addClass('pulse-link');
 
 
          
         }
          if(anchorLink!=='twelfthPage'){
-          $('#api').removeClass('pulse-link');
+          $api.removeClass('pulse-link');
         }
 
 
           if (anchorLink === "thirteenthPage") {
              $counter.text("13");
-              $('.author').fadeOut(100);
+              $author.fadeOut(100);
                 $('#section11').find('.slide').addClass('loadImage');
              obj2.load();         /* added here as well to ensure doesnt play on page 12*/
-             $('.nothing').fadeOut(100);
-             $('.godard').fadeOut(100);
-          $('.author').fadeOut(100);
-          $('.music').fadeOut(100);
-          $('#neu').css('visibility','hidden');
-          $('.birdman').fadeOut(100);
-          $('#nothing').removeClass('pulse-link'); 
+             $nothing.fadeOut(100);
+             $godard.fadeOut(100);
+          $author.fadeOut(100);
+          $music.fadeOut(100);
+          $neu.fadeOut(100);
+          $birdman.fadeOut(100);
+          $Nothing.removeClass('pulse-link'); 
           
         
 
@@ -395,7 +406,10 @@ $('.home-3-btns').htm;
               obj2.src="leb wohl edit-sm.mp3";
         obj2.volume=0.3;
         obj2.autoPlay=false;
-        obj2.preLoad=true; 
+        obj2.preLoad=true;
+        obj2.paused=false;
+
+
         if (typeof obj2.loop == 'boolean')
 {
     obj2.loop = true;
@@ -417,50 +431,70 @@ else
 
      $('.play').on( "click", function() {
        obj2.play();
+
      }); 
 
-     $('.fa-music').on("click",function() {
+     $('.fa-pause').on("click",function() {
+
+      
+     if(obj2.paused){
+      obj2.play();
+     }
+     else{
+      obj2.pause();
+     }
+     $(this).toggleClass('pause');
+
+
+     });
+       
+/*
+
       if ( $('#neu').css('visibility') == 'hidden' )
     $('#neu').css('visibility','visible');
   else
     $('#neu').css('visibility','hidden');
 
      }); 
+ */         
           
-          obj2.play();
            
 
           
          
          //  $headnav.css('background-color','#fff');
-          $('.nothing').fadeIn('slow').birdman({
+          $nothing.fadeIn('slow').birdman({
                         speedup:false,
                         delay:0
                       });
-          $('.birdman').fadeIn().birdman({
+          $birdman.fadeIn().birdman({
                         speedup:false,
                         delay:900
                       });
-           $('.godard').fadeIn().birdman({
+           $godard.fadeIn().birdman({
                         speedup:true,
                         delay:300
                       });    
           
-          $('.author').fadeIn(6000);
-          $('.music').fadeIn(1000);
-          $('#nothing').addClass('pulse-link');
+          $author.fadeIn(6000);
+          $neu.fadeIn(1000);
+          $music.fadeIn(1000);
+          $Nothing.addClass('pulse-link');
         }
          
           if (anchorLink !== "fourteenthPage"){
             obj2.load();
+
+            obj2.paused=true;
+
            
-             $('.nothing').fadeOut(100);
-             $('.godard').fadeOut(100);
-          $('.author').fadeOut(100);
-          $('.music').fadeOut(100);
-          $('#neu').css('visibility','hidden');
-          $('.birdman').fadeOut(100);
-          $('#nothing').removeClass('pulse-link');
+             $nothing.fadeOut(100);
+             $godard.fadeOut(100);
+          $author.fadeOut(100);
+          $music.fadeOut(100);
+          $neu.fadeOut(100);
+          $birdman.fadeOut(100);
+          $Nothing.removeClass('pulse-link');
           }
 
       }
