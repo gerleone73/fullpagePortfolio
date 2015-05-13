@@ -924,6 +924,24 @@ hr{
   font-weight: 300;
  text-align: center;
 }
+
+.loadMsg{
+   z-index: 12;
+  top:65%;
+  left:50%;
+  margin-left: -40px;
+  margin-top:-11px;
+  display: block;
+  position: absolute;
+   color:#A8FFEE;
+ font-family: 'Avant Garde', Avantgarde, 'texgyreadventor-regular-webfont',  'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+ 
+  letter-spacing: 0.05em;
+  font-size: 22px;
+  font-weight: 300;
+ text-align: center;
+}
   
   #loader:before {
     content: "";
@@ -998,7 +1016,7 @@ hr{
 
 .loaded #loader-wrapper {
   visibility: hidden;
-  transform: translateY(-100%);
+ /* transform: translateY(-100%);*/
   transition: all 0.3s 1s ease-out;
 }
 
