@@ -14,8 +14,10 @@ $('body').on({
 $(window).bind("load", function(){
 
 
-  var $arrowdown = $('.arrow-down');
-  var $arrowdown1 = $('.arrow-down1');
+  var $arrowdown = $('.arrow-down'),
+      $arrowdown1 = $('.arrow-down1'),
+      $total = $('.total'),
+       $counter = $('.counter');
 
   $('body').addClass('loaded');
   $('.loading').fadeOut();
@@ -26,13 +28,14 @@ $(window).bind("load", function(){
     $('.section0').css('visibility','visible');
     $('.headnav').fadeIn('fast');
     
-     $('.total').fadeIn('fast');
-      $('.counter').fadeIn('fast');
+     $total.fadeIn('fast');
+      $counter.fadeIn('fast');
       $arrowdown1.fadeIn('fast');
       $arrowdown.fadeIn('fast');
-     $('.hidden-text-off').hide();
-     $('.hidden-text-on').hide();
-     $('.hidden-text-me').hide();
+
+      $('.hidden-text-off,.hidden-text-on,.hidden-text-me').hide();
+
+    
 
 
 
@@ -126,42 +129,37 @@ if (document.documentElement.clientWidth < 1000) {
 });
 
 
-
-
-
-
-
      var obj2 = document.createElement("audio");
       
 
 
-     var $counter = $('.counter');
-     var $arrowdown = $('.arrow-down');
-     var $Gl = $('.Gl');
-     var $Return =$('.return');
-     var $home = $('#home');
-     var $about = $('#about');
-     var $wise = $('#wise');
-     var $sine = $('#sine');
-     var $styles = $('#styles');
-     var $kraftwerk = $('#kraftwerk');
-     var $his = $('#his');
-     var $misc = $('#misc');
-     var $cncf = $('#cncf');
-     var $crowd = $('#crowd');
-     var $react = $('#re-act');
-     var $contact =$('#contact');
-     var $turnOff = $ (".turn-off");
-     var $turnOn = $(".turn-on");
-     var $abler = $("#abler");
-     var $api = $("#api");
-     var $nothing = $('.nothing');
-     var $Nothing = $('#nothing');
-     var $godard = $('.godard');
-     var $author = $('.author');
-     var $music = $('.music');
-     var $neu = $('#neu');
-     var $birdman =$('.birdman');
+      var $counter = $('.counter'),
+          $arrowdown = $('.arrow-down'),
+          $Gl = $('.Gl'),
+          $Return =$('.return'),
+          $home = $('#home'),
+          $about = $('#about'),
+          $wise = $('#wise'),
+          $sine = $('#sine'),
+          $styles = $('#styles'),
+          $kraftwerk = $('#kraftwerk'),
+          $his = $('#his'),
+          $misc = $('#misc'),
+          $cncf = $('#cncf'),
+          $crowd = $('#crowd'),
+          $react = $('#re-act'),
+          $contact =$('#contact'),
+          $turnOff = $ (".turn-off"),
+          $turnOn = $(".turn-on"),
+          $abler = $("#abler"),
+          $api = $("#api"),
+          $nothing = $('.nothing'),
+          $Nothing = $('#nothing'),
+          $godard = $('.godard'),
+          $author = $('.author'),
+          $music = $('.music'),
+          $neu = $('#neu'),
+          $birdman =$('.birdman');
 
 
 
