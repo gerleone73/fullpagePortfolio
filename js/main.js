@@ -35,10 +35,7 @@ $(window).bind("load", function(){
 
       $('.hidden-text-off,.hidden-text-on,.hidden-text-me').hide();
 
-    
-
-
-
+  
 
       setTimeout(function(){
       $('.home-3-btns').css('opacity', '0').addClass('slideDown');
@@ -121,11 +118,6 @@ if (document.documentElement.clientWidth < 1000) {
  
     });
  
-
-   
-    
-
-  
 });
 
 
