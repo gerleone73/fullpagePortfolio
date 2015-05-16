@@ -15,7 +15,7 @@ On the "front-page" (ie page 1) the visitor is greeted with a fullscreen backgro
 
 On page 2 I have implemented animation that slides in the image and text from either side of the screen. The image has a subtle transition to give effect of my looking up and then making eye-contact as the page slides into view.
 
-Beneath the title text GERRY LEONARD I list the various technolgies I have used beside their icons. This serves as a key on the project pages. There is a download CV link and a link to this page. My reasons for providing this link are twofold: to provide information about the site, and as I have minified the code to enable users to review my code in unminified form here on github.
+Beneath the title text GERRY LEONARD I list the various technolgies I have used beside their icons. This serves as a key on the project pages. There is a download CV link and a link to this page. My reasons for providing this link are twofold: to provide information about the site, and, as I have minified the code, to enable users to review my code in unminified form here on github.
 
 The project pages speak for themselves.
 
