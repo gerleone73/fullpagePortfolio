@@ -1,5 +1,5 @@
-# gerleone.com documentation
-## repo for gerleone.com portfolio site
+# gerryleonard.me documentation
+## repo for portfolio site
 
 My aim with this site is to create an engaging and appealing portfolio website where visitors can explore some of my work.
 
